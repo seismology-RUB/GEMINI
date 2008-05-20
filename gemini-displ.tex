@@ -1,0 +1,327 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{times}
+\usepackage[intlimits]{amsmath}
+%
+% for reviewers version: remove endfloat
+% for original version: keep endfloat
+%
+\usepackage{graphicx}
+\usepackage[paperwidth=8.26in,paperheight=11.69in,
+            left=1in,right=1in,top=1in,
+            bottom=1in,headheight=0in,footskip=0.5in]{geometry}
+\renewcommand{\v}[1]{{\bf #1}}
+\newcommand{\rrs}{\mathbf{r},\mathbf{r}_s}
+\newcommand{\rsr}{\mathbf{r}_s,\mathbf{r}}
+\newcommand{\dt}{\frac{\partial}{\partial\vartheta}}
+\newcommand{\dD}{\frac{\partial}{\partial\Delta}}
+\newcommand{\dphi}{\frac{\partial}{\partial\varphi}}
+\pagestyle{myheadings} \markright{}
+\begin{document}
+\setlength{\parindent}{0cm}
+\addtolength{\parskip}{0.1cm}
+\section{Expressions for displacements used in GEMINI routines}
+%
+To compute the seismic displacement in a spherically symmetric Earth, displacement, radial stress and exciting forces are represented by scalar potentials:
+\begin{eqnarray}
+\v{u} & = & U(r,\vartheta,\varphi)\v{e}_r+\nabla_1 V(r,\vartheta,\varphi)-\v{e}_r\times\nabla_1 W(r,\vartheta,\varphi) \nonumber \\
+\v{e}_r\cdot\v{T} & = & R(r,\vartheta,\varphi)\v{e}_r+\nabla_1 S(r,\vartheta,\varphi)-\v{e}_r\times\nabla_1 T(r,\vartheta,\varphi) \nonumber \\
+\v{f} & = & G(r,\vartheta,\varphi)\v{e}_r+\nabla_1 H(r,\vartheta,\varphi)-\v{e}_r\times\nabla_1 K(r,\vartheta,\varphi) \nonumber \\
+\end{eqnarray}
+%
+$\nabla_1$ is the horizontal gradient on the unit sphere defined as
+\begin{displaymath}
+\nabla_1 = \v{e}_\vartheta\dt + \v{e}_\varphi\frac{1}{\sin\vartheta}\dphi \,.
+\end{displaymath}
+%
+It follows that
+%
+\begin{displaymath}
+\v{e}_r\times\nabla_1 = \v{e}_\varphi\dt - \v{e}_\vartheta\frac{1}{\sin\vartheta}\dphi \,.
+\end{displaymath}
+%
+These scalar potentials are expanded into spherical harmonics, e.g.:
+%
+\begin{displaymath}
+U(r,\vartheta,\varphi) = \sum_{\ell=0}^\infty\,\sum_{m=-\ell}^\ell\,U_\ell^m(r) Y_\ell^m(\vartheta,\varphi) \,.
+\end{displaymath}
+%
+We use the following definition of the spherical harmonics:
+\begin{displaymath}
+Y_\ell^m(\vartheta,\varphi)=(-1)^m\sqrt{\frac{2\ell+1}{4\pi}\frac{(\ell-m)!}{(\ell+m)!}}P_\ell^m(\cos\theta)\,e^{im\varphi} \,.
+\end{displaymath}
+%
+On insertion of these expressions, the elastodynamic equation reduces to a system of ordinary differential equations (SODE) for the expansion coefficients:
+%
+\begin{displaymath}
+\frac{dy}{dr}=A(r)y(r)+z(r) \,
+\end{displaymath}
+%
+where $y(r) = (U_\ell^m,R_\ell^m,V_\ell^m,S_\ell^m,W_\ell^m,T_\ell^m)$ is also called the displacement-stress vector (DSV), $A(r)$ is the 6x6 system matrix and $z(r) = (0,-G_\ell^m,0,-H_\ell^m,0,-K_\ell^m)$ is the source term vector.
+%
+\subsection{Moment tensor source}
+%
+For an excitation by a moment tensor point source at the north pole of the spherical coordinate system and depth $r_s$, only expansion coefficients with $|m| \le 2$ do not vanish (see thesis Dalkolmo, page 21). The general structure of $z(r)$ is
+\begin{displaymath}
+z(r) = z_1\delta(r-r_s)+z_2\frac{d}{dr}\delta(r-r_s) \,.
+\end{displaymath}
+Dalkolmo shows (page 24) that the solution $y(r)$ must have a jump at the source given by
+\begin{displaymath}
+s = z_1+A(r_s)z_2 \,.
+\end{displaymath}
+Explicit values for $s$ are also given in Dalkolmo's thesis, page 24.
+
+To compute Green functions for a general moment tensor it is convenient to solve the SODE for 6 basis jump vectors $s$. These are associated with a certain value of $m$, a combination of moment tensor elements and a factor extracted from the source jump vectors to make them $\ell$-independent. Everything is listed in the following table:
+\begin{displaymath}
+\begin{array}{|l|l|l|l|l|}\hline
+\mbox{Spheroidal} & & & & \\ \hline
+\mbox{Index} & \mbox{Jump vector} & $m$ & \mbox{Moment} & \mbox{Factor} \\ \hline
+1 & \left(\frac{1}{r_s^2 C}, \frac{2F}{r_s^3 C}, 0, \frac{-F}{r_s^3 C}\right) & m=0 & M_{rr} & \gamma_\ell \\
+2 & \left(0,\frac{-1}{r_s^3},0,\frac{1}{2r_s^3}\right) & m=0 & M_{\vartheta\vartheta}+M_{\varphi\varphi} & \gamma_\ell \\
+3 & \left(0,0,\frac{1}{2r_s^2 L}, 0 \right) & m=\pm 1 & \mp M_{r \vartheta}+iM_{r \varphi} & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} \\
+4 & \left(0,0,0,\frac{1}{4r_s^3} \right) & m=\pm 2 & M_{\varphi\varphi}-M_{\vartheta\vartheta}\pm 2iM_{\vartheta\varphi} & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+2)!}{(l-2)!}} \\ \hline
+\mbox{Toroidal} & & & & \\ \hline
+\mbox{Index} & \mbox{Jump vector} & $m$ & \mbox{Moment} & \mbox{Factor} \\ \hline
+1 & \left(\frac{1}{2r_s^2 L}, 0\right) & m=\pm 1 & \pm M_{r \varphi}+iM_{r \vartheta} & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} \\
+2 & \left(0,\frac{1}{4r_s^3}\right) & m=\pm 2 & \mp i(M_{\varphi\varphi}-M_{\vartheta\vartheta})+ 2M_{\vartheta\varphi} & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+2)!}{(l-2)!}}\\ \hline
+\end{array}
+\end{displaymath}
+Note that the moment tensor components refer to basis vectors at the pole with $\v{e}_\vartheta$ pointing along the $\phi=0$ meridian and $\v{e}_\varphi$ perpendicular to it.
+
+In the following I give expressions for the displacement-stress potentials. Let $U_\ell^{(k)}$ denote any expansion coefficient associated with the k-th spheroidal jump vector and $W_\ell^{(k)}$ the expansion coefficient for the k-th toroidal jump vector, respectively. Let us also write $Y_{\ell}^{m} = X_{\ell}^{m}\,e^{im\varphi}$ and use $X_{\ell}^{-m}= (-1)^m X_{\ell}^{m}$. Then, we get for the associated potentials:
+\begin{displaymath}
+\begin{array}{|l|l|}\hline
+\mbox{Spheroidal} & \\ \hline
+\mbox{Index} & \mbox{Expression} \\ \hline
+1 & \sum_\ell\,\gamma_\ell U_\ell^{(1)}X_{\ell}^{0}\,M_{rr} \\
+2 & \sum_\ell\,\gamma_\ell U_\ell^{(2)}X_{\ell}^{0}\,(M_{\vartheta\vartheta}+M_{\varphi\varphi}) \\
+3 & \sum_\ell\,-\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} U_\ell^{(3)} X_{\ell}^{1} \left(M_{r \vartheta}\cos\varphi+M_{r \varphi}\sin\varphi\right) \\
+4 & \sum_\ell\,\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+2)!}{(l-2)!}} U_\ell^{(4)} X_{\ell}^{2}\left[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\right] \\ \hline
+\mbox{Toroidal} & \\ \hline
+\mbox{Index} & \mbox{Expression} \\ \hline
+1 & \sum_\ell\,\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} W_\ell^{(1)} X_{\ell}^{1} \left(M_{r\varphi}\cos\varphi-M_{r \vartheta}\sin\varphi\right) \\
+2 & \sum_\ell\,\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+2)!}{(l-2)!}} W_\ell^{(2)} X_{\ell}^{2} \left[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\sin 2\varphi + 2M_{\vartheta\varphi}\cos 2\varphi\right] \\ \hline
+\end{array}
+\end{displaymath}
+
+From the potentials we can compute displacement components:
+\begin{displaymath}
+u_r = U;\quad u_\vartheta = \frac{dV}{d\vartheta}+\frac{1}{\sin\vartheta}\frac{dW}{d\varphi};\quad u_\varphi = \frac{1}{\sin\vartheta}\frac{dV}{d\varphi}-\frac{dW}{d\vartheta} \,.
+\end{displaymath}
+We switch to Legendre functions using 
+\begin{displaymath}
+X_\ell^m = (-1)^m \gamma_\ell\sqrt{\frac{(l-m)!}{(l+m)!}} P_\ell^m \,.
+\end{displaymath}
+We then get:
+% Radialverschiebung
+\begin{align}
+u_r = \sum_\ell \gamma_\ell^2 \bigg\{ & P_\ell^0\left[U_\ell^{(1)}M_{rr}+U_\ell^{(2)}(M_{\vartheta\vartheta}+M_{\varphi\varphi})\right] + \nonumber \\
+& P_\ell^1\frac{2}{\ell(\ell+1)}U_\ell^{(3)} \left(M_{r \vartheta}\cos\varphi+M_{r \varphi}\sin\varphi\right) + \nonumber \\
+& P_\ell^2\frac{2}{\ell(\ell+1)}U_\ell^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big]\bigg\} \nonumber 
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \sum_\ell \gamma_\ell^2 \bigg\{ & \frac{dP_\ell^0}{d\vartheta}\left[V_\ell^{(1)}M_{rr}+V_\ell^{(2)}(M_{\vartheta\vartheta}+M_{\varphi\varphi})\right] + \nonumber \\
+& \frac{dP_\ell^1}{d\vartheta}\frac{2}{\ell(\ell+1)}V_\ell^{(3)} \left(M_{r \vartheta}\cos\varphi+M_{r \varphi}\sin\varphi\right) + \nonumber \\
+& \frac{dP_\ell^2}{d\vartheta}\frac{2}{\ell(\ell+1)}V_\ell^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big] + \nonumber  \\
+& \frac{P_\ell^1}{\sin\vartheta}\frac{2}{\ell(\ell+1)}W_\ell^{(1)} \left(M_{r \varphi}\sin\varphi+M_{r \vartheta}\cos\varphi\right) + \nonumber  \\
+& \frac{P_\ell^2}{\sin\vartheta}\frac{4}{\ell(\ell+1)}W_\ell^{(2)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \sum_\ell \gamma_\ell^2 \bigg\{ & \frac{dP_\ell^1}{d\vartheta}\frac{2}{\ell(\ell+1)}W_\ell^{(1)} \left(M_{r \varphi}\cos\varphi-M_{r \vartheta}\sin\varphi\right) + \nonumber \\
+& \frac{dP_\ell^2}{d\vartheta}\frac{-2}{\ell(\ell+1)}W_\ell^{(2)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\sin 2\varphi + 2M_{\vartheta\varphi}\cos 2\varphi\Big] + \nonumber  \\
+& \frac{P_\ell^1}{\sin\vartheta}\frac{2}{\ell(\ell+1)}V_\ell^{(3)} \left(-M_{r \vartheta}\sin\varphi+M_{r \varphi}\cos\varphi\right) + \nonumber  \\
+& \frac{P_\ell^2}{\sin\vartheta}\frac{-4}{\ell(\ell+1)}V_\ell^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\sin 2\varphi + 2M_{\vartheta\varphi}\cos 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+%
+\subsection{Single force source}
+%
+For an excitation by a single force point source at the north pole of the spherical coordinate system and depth $r_s$, only expansion coefficients with $|m| \le 1$ do not vanish. Explicit values for the jump vector $s$ are also given in Dalkolmo's thesis, page 24, with a sign error in (3.8). To compute Green functions for a general single force it is convenient to solve the SODE for 3 basis jump vectors $s$. These are associated with a certain value of $m$, a combination of force components and a factor extracted from the source jump vectors to make them $\ell$-independent. Everything is listed in the following table:
+\begin{displaymath}
+\begin{array}{|l|l|l|l|l|}\hline
+\mbox{Spheroidal} & & & & \\ \hline
+\mbox{Index} & \mbox{Jump vector} & $m$ & \mbox{Force} & \mbox{Factor} \\ \hline
+1 & \left(0, -\frac{1}{r_s^2}, 0, 0)\right) & m=0 & f_r & \gamma_\ell \\
+2 & \left(0, 0, 0,\frac{1}{2r_s^2}\right) & m=\pm 1 & \pm f_\vartheta-if_\varphi & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} \\ \hline
+\mbox{Toroidal} & & & & \\ \hline
+\mbox{Index} & \mbox{Jump vector} & $m$ & \mbox{Force} & \mbox{Factor} \\ \hline
+1 & \left(0, \frac{1}{2r_s^2}\right) & m=\pm 1 & \mp f_\varphi-if_\vartheta & \frac{\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} \\ \hline
+\end{array}
+\end{displaymath}
+
+In the following I give expressions for the displacement-stress potentials. Let $U_\ell^{(k)}$ denote any expansion coefficient associated with the k-th spheroidal jump vector and $W_\ell^{(k)}$ the expansion coefficient for the k-th toroidal jump vector, respectively. Let us also write $Y_{\ell}^{m} = X_{\ell}^{m}\,e^{im\varphi}$ and use $X_{\ell}^{-m}= (-1)^m X_{\ell}^{m}$. Then, we get for the associated potentials:
+\begin{displaymath}
+\begin{array}{|l|l|}\hline
+\mbox{Spheroidal} & \\ \hline
+\mbox{Index} & \mbox{Expression} \\ \hline
+1 & \sum_\ell\,\gamma_\ell U_\ell^{(1)}X_{\ell}^{0}\,f_r \\
+2 & \sum_\ell\,\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} U_\ell^{(2)} X_{\ell}^{1} \left(f_\vartheta\cos\varphi+f_\varphi\sin\varphi\right) \\ \hline
+\mbox{Toroidal} & \\ \hline
+\mbox{Index} & \mbox{Expression} \\ \hline
+1 & \sum_\ell\,\frac{2\gamma_\ell}{\ell(\ell+1)}\sqrt{\frac{(l+1)!}{(l-1)!}} W_\ell^{(1)} X_{\ell}^{1} \left(-f_\varphi\cos\varphi+f_\vartheta\sin\varphi\right) \\ \hline
+\end{array}
+\end{displaymath}
+
+From the potentials we can compute displacement components:
+\begin{displaymath}
+u_r = U;\quad u_\vartheta = \frac{dV}{d\vartheta}+\frac{1}{\sin\vartheta}\frac{dW}{d\varphi};\quad u_\varphi = \frac{1}{\sin\vartheta}\frac{dV}{d\varphi}-\frac{dW}{d\vartheta} \,.
+\end{displaymath}
+We switch to Legendre functions using 
+\begin{displaymath}
+X_\ell^m = (-1)^m \gamma_\ell\sqrt{\frac{(l-m)!}{(l+m)!}} P_\ell^m \,.
+\end{displaymath}
+We then get:
+% Radialverschiebung
+\begin{align}
+u_r = \sum_\ell \gamma_\ell^2 \bigg\{ & P_\ell^0 U_\ell^{(1)}f_r + P_\ell^1\frac{-2}{\ell(\ell+1)}U_\ell^{(2)} \left(f_{\vartheta}\cos\varphi+f_{\varphi}\sin\varphi\right)\bigg\} \nonumber 
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \sum_\ell \gamma_\ell^2 \bigg\{ & \frac{dP_\ell^0}{d\vartheta}V_\ell^{(1)}f_{r} + \frac{dP_\ell^1}{d\vartheta}\frac{-2}{\ell(\ell+1)}V_\ell^{(2)} \left(f_{\vartheta}\cos\varphi+f_{\varphi}\sin\varphi\right) + \nonumber \\
+& \frac{P_\ell^1}{\sin\vartheta}\frac{-2}{\ell(\ell+1)}W_\ell^{(1)} \left(f_{\varphi}\sin\varphi+f_{\vartheta}\cos\varphi\right)\bigg\} \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \sum_\ell \gamma_\ell^2 \bigg\{ & \frac{dP_\ell^1}{d\vartheta}\frac{2}{\ell(\ell+1)}W_\ell^{(1)} \left(-f_{\varphi}\cos\varphi+f_{\vartheta}\sin\varphi\right) + \nonumber \\
+& \frac{P_\ell^1}{\sin\vartheta}\frac{-2}{\ell(\ell+1)}V_\ell^{(2)} \left(-f_{\vartheta}\sin\varphi+f_{\varphi}\cos\varphi\right)\bigg\} \nonumber
+\end{align}
+%-------------------------------------------------------------------------
+\section{Expressions for large harmonic degree}
+%-------------------------------------------------------------------------
+If the wavefield is dominated by contributions from large harmonic degrees we can use asymptotic expressions of the Legendre functions in terms of Bessel functions. Note that this does not mean a conversion from spherical to cartesian coordinates. It is just an approximation concerning the wave propagation. The results are still in spherical coordinates and valid for spherical problems if harmonic degree is large.
+\begin{displaymath}
+P_\ell^m(\cos\vartheta) = \sqrt{\frac{\vartheta}{\sin\vartheta}}\,\nu^m\,J_m(\nu\vartheta) \,.
+\end{displaymath}
+The error is proportional to $\nu^{-3/2}$. Here, $\nu = \sqrt{\ell(\ell+1)} \approx \ell+\frac{1}{2}$. The sum over $\ell$ is replaced by an integral over $\nu$. In addition, if epicentral distance $\vartheta$ is also small, we can approximate $\sin\vartheta$ by $\vartheta$ with an error proportial to $\vartheta^2$. For a distance of 10 degrees, the error is 1 percent, at 20 degrees it is 2 percent. This leads to the following expressions:
+\begin{displaymath}
+\gamma_\ell^2=\frac{2\ell+1}{4\pi} = \frac{\nu}{2\pi}; \quad \frac{\gamma_\ell^2}{\ell(\ell+1)} = \frac{1}{2\pi\nu}
+\end{displaymath}
+\begin{displaymath}
+P_\ell^0(\cos\vartheta) = J_0(\nu\vartheta); \quad P_\ell^1(\cos\vartheta) = \nu J_1(\nu\vartheta); \quad P_\ell^2(\cos\vartheta) = \nu^2 J_2(\nu\vartheta)\,,
+\end{displaymath}
+\begin{displaymath}
+\frac{dP_\ell^0}{d\vartheta} = -\nu J_1(\nu\vartheta); \quad \frac{dP_\ell^1}{d\vartheta} = \nu^2(J_0-\frac{1}{\nu\vartheta}J_1);  \quad \frac{dP_\ell^2}{d\vartheta} = \nu^3(J_1-\frac{2}{\nu\vartheta}J_2) \,,
+\end{displaymath}
+\begin{displaymath}
+\frac{P_\ell^1}{\sin\vartheta} = \nu^2 \frac{J_1}{\nu\vartheta}; \quad \frac{P_\ell^2}{\sin\vartheta} = \nu^3 \frac{J_2}{\nu\vartheta}\,,
+\end{displaymath}
+\begin{displaymath}
+\frac{d^2P_\ell^0}{d\vartheta^2} = \nu^2(-J_0+\frac{J_1}{\nu\vartheta}); \quad \frac{d^2P_\ell^1}{d\vartheta^2} = \nu^3(-J_1+\frac{J_2}{\nu\vartheta});  \quad \frac{d^2P_\ell^2}{d\vartheta^2} = \nu^4\left[\left(\frac{6}{(\nu\vartheta)^2}-1\right)J_2-\frac{J_1}{\nu\vartheta}\right] \,,
+\end{displaymath}
+\begin{displaymath}
+\frac{d}{d\vartheta}\left(\frac{P_\ell^1}{\sin\vartheta}\right) = -\nu^3 \frac{J_2}{\nu\vartheta}; \quad \frac{d}{d\vartheta}\left(\frac{P_\ell^2}{\sin\vartheta}\right) = \nu^4\left( -\frac{3J_2}{(\nu\vartheta)^2}+\frac{J_1}{\nu\vartheta}\right)\,.
+\end{displaymath}
+We have added here expressions for derivatives of Legendre functions because they are needed for calculating strains.
+%---------------------------------
+\subsection{Single force sources}
+%---------------------------------
+Using these expressions, we get for the displacements due to a single force source:
+% Radialverschiebung
+\begin{align}
+u_r = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \left\{J_0 U_\nu^{(1)}f_r-\frac{2}{\nu}J_1 U_\nu^{(2)}(f_\vartheta\cos\varphi+f_\varphi\sin\varphi)\right\} \nonumber
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \left\{-\nu J_1 V_\nu^{(1)}f_r -2\left[\left(J_0-\frac{J_1}{\nu\vartheta}\right) V_\nu^{(2)}+\frac{J_1}{\nu\vartheta}W_\nu^{(1)}\right] \left(f_{\vartheta}\cos\varphi+f_{\varphi}\sin\varphi\right)\right\}  \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \left\{2\left(J_0-\frac{J_1}{\nu\vartheta}\right)W_\nu^{(1)}+2\frac{J_1}{\nu\vartheta}V_\nu^{(2)}\right\}(-f_\varphi\cos\varphi+f_\vartheta\sin\varphi) \nonumber
+\end{align}
+The final step is to convert from angular coordinates to distances. Let $x$-axis be the epicentral distance. Instead of angular wavenumbers $\nu$ we switch to true wavenumbers $k$. With the earth's radius $R$, epicentral distance $x=R\vartheta$ and wavenumber $k=\nu/R$, we find $\nu\vartheta=kx$. This leads to 
+% Radialverschiebung
+\begin{align}
+u_r = \frac{R^2}{2\pi}\int_0^\infty\,k dk \left\{J_0 U^{(1)}(k)f_z-\frac{2}{kR}J_1 U^{(2)}(k)(f_x\cos\varphi+f_y\sin\varphi)\right\} \nonumber
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \frac{R^2}{2\pi}\int_0^\infty\,k dk \left\{-kR J_1 V^{(1)}(k)f_z -2\left[\left(J_0-\frac{J_1}{kx}\right) V^{(2)}(k)+\frac{J_1}{kx}W^{(1)}(k)\right] \left(f_x\cos\varphi+f_y\sin\varphi\right)\right\} \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \frac{R^2}{2\pi}\int_0^\infty\,k dk \left\{2\left(J_0-\frac{J_1}{kx}\right)W^{(1)}(k)+2\frac{J_1}{kx}V^{(2)}(k)\right\}(-f_y\cos\varphi+f_x\sin\varphi) \nonumber
+\end{align}
+where $u_\vartheta$ is the longitudinal (L) component and $u_\varphi$ is the transverse (T) component.
+To calculate the above displacement we need to evaluate 7 different integrals over wavenumber.
+%----------------------------------
+\subsection{Moment tensor sources}
+%----------------------------------
+In case of a moment tensor source we get:
+% Radialverschiebung
+\begin{align}
+u_r = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \bigg\{ & J_0\left[U_\nu^{(1)}M_{rr}+U_\nu^{(2)}(M_{\vartheta\vartheta}+M_{\varphi\varphi})\right] + \notag \\
+& \frac{2}{\nu}J_1 U_\nu^{(3)} \left(M_{r \vartheta}\cos\varphi+M_{r \varphi}\sin\varphi\right) + \nonumber \\
+& 2 J_2 U_\nu^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big]\bigg\} \nonumber 
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \bigg\{ & -\nu J_1\left[V_\nu^{(1)}M_{rr}+V_\nu^{(2)}(M_{\vartheta\vartheta}+M_{\varphi\varphi})\right] + \nonumber \\
+& 2\left(J_0-\frac{J_1}{\nu\vartheta}\right) V_\nu^{(3)} \left(M_{r \vartheta}\cos\varphi+M_{r \varphi}\sin\varphi\right) + \nonumber \\
+& 2\nu\left(J_1-\frac{2J_2}{\nu\vartheta}\right) V_\nu^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big] + \nonumber  \\
+& 2 \frac{J_1}{\nu\vartheta} W_\nu^{(1)} \left(M_{r \varphi}\sin\varphi+M_{r \vartheta}\cos\varphi\right) + \nonumber  \\
+& 4\nu \frac{J_2}{\nu\vartheta} W_\nu^{(2)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\cos 2\varphi - 2M_{\vartheta\varphi}\sin 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \frac{1}{2\pi}\int_0^\infty\,\nu d\nu \bigg\{ & 2\left(J_0-\frac{J_1}{\nu\vartheta}\right) W_\nu^{(1)} \left(M_{r \varphi}\cos\varphi-M_{r \vartheta}\sin\varphi\right) + \nonumber \\
+& -2\nu\left(J_1-\frac{2J_2}{\nu\vartheta}\right) W_\nu^{(2)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\sin 2\varphi + 2M_{\vartheta\varphi}\cos 2\varphi\Big] + \nonumber  \\
+& 2 \frac{J_1}{\nu\vartheta} V_\nu^{(3)} \left(-M_{r \vartheta}\sin\varphi+M_{r \varphi}\cos\varphi\right) + \nonumber \\
+& -4\nu \frac{J_2}{\nu\vartheta} V_\nu^{(4)} \Big[(M_{\varphi\varphi}-M_{\vartheta\vartheta})\sin 2\varphi + 2M_{\vartheta\varphi}\cos 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+Expressed as integrals over wavenumber using $\nu=kR$ and $\nu\vartheta=kx$ we get:
+% Radialverschiebung
+\begin{align}
+u_r = \frac{R^2}{2\pi}\int_0^\infty\,k dk \bigg\{ & J_0\left[U^{(1)}(k) M_{zz}+U^{(2)}(k)(M_{xx}+M_{yy})\right] + \notag \\
+& \frac{2}{kR}J_1 U^{(3)}(k) \left(M_{zx}\cos\varphi+M_{zy}\sin\varphi\right) + \nonumber \\
+& 2 J_2 U^{(4)}(k) \Big[(M_{yy}-M_{xx})\cos 2\varphi - 2M_{xy}\sin 2\varphi\Big]\bigg\} \nonumber 
+\end{align}
+% Suedverschiebung
+\begin{align}
+u_\vartheta = \frac{R^2}{2\pi}\int_0^\infty\,k dk \bigg\{ & -kR J_1\left[V^{(1)}(k) M_{rr}+V^{(2)}(k) (M_{xx}+M_{yy})\right] + \nonumber \\
+& 2\left(J_0-\frac{J_1}{kx}\right) V^{(3)}(k) \left(M_{zx}\cos\varphi+M_{zy}\sin\varphi\right) + \nonumber \\
+& 2kR\left(J_1-\frac{2J_2}{kx}\right) V^{(4)}(k) \Big[(M_{yy}-M_{xx})\cos 2\varphi - 2M_{xy}\sin 2\varphi\Big] + \nonumber  \\
+& 2 \frac{J_1}{kx} W^{(1)}(k) \left(M_{zy}\sin\varphi+M_{zx}\cos\varphi\right) + \nonumber  \\
+& 4kR \frac{J_2}{kx} W^{(2)}(k) \Big[(M_{yy}-M_{xx})\cos 2\varphi - 2M_{xy}\sin 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+% Ostverschiebung
+\begin{align}
+u_\varphi = \frac{R^2}{2\pi}\int_0^\infty\,k dk \bigg\{ & 2\left(J_0-\frac{J_1}{kx}\right) W^{(1)}(k) \left(M_{zy}\cos\varphi-M_{zx}\sin\varphi\right) + \nonumber \\
+& -2kR\left(J_1-\frac{2J_2}{kx}\right) W^{(2)}(k) \Big[(M_{yy}-M_{xx})\sin 2\varphi + 2M_{xy}\cos 2\varphi\Big] + \nonumber  \\
+& 2 \frac{J_1}{kx} V^{(3)}(k) \left(-M_{zx}\sin\varphi+M_{zy}\cos\varphi\right) + \nonumber \\
+& -4kR \frac{J_2}{kx} V^{(4)}(k) \Big[(M_{yy}-M_{xx})\sin 2\varphi + 2M_{xy}\cos 2\varphi\Big]\bigg\} \nonumber
+\end{align}
+To calculate the above integrals we need to evaluate 14 different integrals over wavenumber.
+%
+\subsection{Conversion to cartesian components}
+In shallow applications there is a need to transform the spherical displacement components to cartesian ones. Let us assume that we have set up a right-handed cartesian coordinate system $z,x,y$ in which the source is at the origin and the receiver has coordinates $z,x,y$. We assume that $\phi$ denotes the angle between the $x$-axis and the source-receiver line counted from $x$ over $y$. Then we have
+\begin{align}
+u_z & = u_r \notag \\
+u_x & = u_\vartheta \cos\varphi-u_\varphi \sin\varphi \nonumber  \\
+u_y & = u_\vartheta \sin\varphi + u_\varphi\cos\varphi \nonumber
+\end{align}
+%--------------------------------
+\section{Units}
+%-------------------------------
+\subsection{Force excitation}
+In FLGEVASK, radii have the unit $km$, velocities $km/s$ and density $g/cm^3$. Elastic constants are computed as $\rho v^2$ leading to a unit of $\frac{g}{cm^3}{km^2}{s^2} = 10^{12} \frac{kg}{km s^2}$.  
+For a force excitation the source term representing the jump of the displacement-stress expansion coefficients at the source is proportional to $1/r_s^2$ and occurs in the 2nd and 4th component. Hence, $R_\ell^m$ and $S_\ell^m$ have dimension $km^{-2}$.
+The dimension of $U_\ell^m$ and $V_\ell^m$ can be obtained from the differential equations
+\begin{align}
+\frac{dU}{dr} &=-\frac{2F}{rC}U+\frac{1}{C}R+\frac{\ell(\ell+1)F}{rC} S \notag \\
+\frac{dV}{dr} &=-\frac{1}{r}U+\frac{1}{r}V+\frac{1}{L}S \notag \,.
+\end{align}
+Thus
+\begin{align}
+[U] = [V] = [r/C]R  &= km*10^{-12}\frac{km s^2}{kg}*km^{-2} = 10^{-12}\frac{s^2}{kg} = 10^{-12}\frac{m}{N} \notag \\
+[R] = [S] = km^{-2} &= 10^{-6} m^{-2} = 10^{-6} \frac{N/m^2}{N} \notag \,.
+\end{align}
+%
+\subsection{Moment tensor excitation}
+For a moment tensor source, the 2nd and 4th components of the jump vector are proportional to $km^{-3}$, and those for the 1st and 3rd component are $r^{-2}C^{-1}$. Thus we get for the dimensions:
+\begin{align}
+[U] = [V] =  r^{-2}C^{-1} &= km^{-2} 10^{-12}\frac{km s^2}{kg} = 10^{-12}\frac{s^2}{km kg} =  10^{-15}\frac{s^2}{m kg} = 10^{-15}\frac{1}{N} = 10^{-15}\frac{m}{Nm} \notag \\
+[R] = [S] = km^{-3} &= 10^{-9} m^{-3} = 10^{-9} \frac{N/m^2}{Nm} \notag \,.
+\end{align}
+According to the definition of the Frechet kernels, they have the dimension $[y]/[r]$ which gives an additional factor of $10^{-3}$. 
+
+\end{document}
