@@ -1,0 +1,56 @@
+Program package FLGEVASK and FLMODES:
+=====================================
+
+A program package to calculate Green functions and normal modes
+in a depth-dependent 1D spherical or plane earth model. Can be used from
+continental scale calculations down to seam waves if epicentral
+distances, penetration depth and max frequency scale appropriately.
+Tested frequency range from 0.01 Hz to 1200 Hz.
+
+Requirements:
+----------------
+
+- f2c and gcc for compilation
+- GNU make
+- m4 macro processor
+
+Compilation:
+-------------
+Use Makefile Make.green for compiling the Green function codes:
+
+* touch *.m4
+* make -f Make.green flgevask
+* make -f Make.green seismogram
+* make -f Make.green greenseis
+
+Use Makefile Make.modes for compiling the normal mode code:
+
+* touch *.m4
+* make -f Make.modes flmodes
+* make -f Make.modes modeseis
+
+The m4 macro processor is used to automatically generate code needed for either
+flgevask or flmodes from a common template.
+
+Usage:
+--------
+The code is self-explaining. Just enter the name of the executable and you get a
+description of arguments and options. For theoretical background look into the
+documentation or into the paper by Friederich and Dalkolmo (GJI, 1995).
+
+Info file:  all information about source and receiver is provided by an info file.
+
+flgevask:   calculate frequency-wavenumber spectra for the displacement stress vector (DSV)
+            with components U, R, V, S, W, T
+seismogram: calculate synthetic seismograms (takes stations from info file, components selected from command line)
+greenseis:  calculate synthetic seismograms (takes stations and components from info file)
+
+flmodes:    calculate eigen-wavenumbers and eigenfunctions
+modeseis:   calculate synthetic seismograms (takes stations and components from info file)
+
+Seismogram format:
+------------------
+The output format for the synthetics is SFF (Stuttgart File Format) which is a slight modification of GSE2.0
+with CMPR6 compression. The routines gse20.f, stuff.f and sunfortran.c contain a library of functions
+to read and write SFF files. As far as I know SFF files can be read in using Seismic Handler. Look into
+stuff.f for a detailed description of the available functions.
