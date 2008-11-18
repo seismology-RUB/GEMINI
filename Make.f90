@@ -4,7 +4,7 @@
 #
 #  General definitions
 #
-bindir = $(LOCBINDIR)
+bindir = .
 obsdir = ./objects
 moduledir = ./mod
 #

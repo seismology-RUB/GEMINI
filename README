@@ -18,6 +18,7 @@ Compilation:
 -------------
 Use Makefile Make.green for compiling the Green function codes:
 
+* create folder ./objects
 * touch *.m4
 * make -f Make.green flgevask
 * make -f Make.green seismogram
@@ -30,9 +31,12 @@ Use Makefile Make.modes for compiling the normal mode code:
 
 Use Makefile Make.f90 to compile Fortran 90 code:
 
+* create folders ./mod and ./objects.
 * make -f Make.f90 modeseis
 * make -f Make.f90 plotFldispersion
 * make -f Make.f90 plotFlmodes
+
+Binaries go into the current directory.
 
 The m4 macro processor is used to automatically generate code needed for either
 flgevask or flmodes from a common template.
