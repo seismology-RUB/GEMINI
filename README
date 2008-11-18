@@ -10,7 +10,7 @@ Tested frequency range from 0.01 Hz to 1200 Hz.
 Requirements:
 ----------------
 
-- f2c and gcc for compilation
+- f2c, gcc and gfortran for compilation
 - GNU make
 - m4 macro processor
 
@@ -27,7 +27,12 @@ Use Makefile Make.modes for compiling the normal mode code:
 
 * touch *.m4
 * make -f Make.modes flmodes
-* make -f Make.modes modeseis
+
+Use Makefile Make.f90 to compile Fortran 90 code:
+
+* make -f Make.f90 modeseis
+* make -f Make.f90 plotFldispersion
+* make -f Make.f90 plotFlmodes
 
 The m4 macro processor is used to automatically generate code needed for either
 flgevask or flmodes from a common template.
@@ -46,7 +51,7 @@ seismogram: calculate synthetic seismograms (takes stations from info file, comp
 greenseis:  calculate synthetic seismograms (takes stations and components from info file)
 
 flmodes:    calculate eigen-wavenumbers and eigenfunctions
-modeseis:   calculate synthetic seismograms (takes stations and components from info file)
+modeseis:   calculate synthetic seismograms (takes stations and components from info file, use f90 code)
 
 Seismogram format:
 ------------------
@@ -54,3 +59,10 @@ The output format for the synthetics is SFF (Stuttgart File Format) which is a s
 with CMPR6 compression. The routines gse20.f, stuff.f and sunfortran.c contain a library of functions
 to read and write SFF files. As far as I know SFF files can be read in using Seismic Handler. Look into
 stuff.f for a detailed description of the available functions.
+
+Citation:
+---------
+If you publish results obtained using GEMINI, cite
+
+Friederich, W. and Dalkolomo, J., 1995. Complete synthetic seismograms for a spherically symmetric earth by
+a numerical computation of the Green's function in the frequency domain, Geophys. J. Int., 122, 537-550.
