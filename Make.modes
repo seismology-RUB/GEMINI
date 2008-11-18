@@ -5,7 +5,7 @@
 #  General definitions
 #
 bindir = .
-obsdir = .
+obsdir = ./objects
 #
 F2C = f2c
 AR = ar

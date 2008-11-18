@@ -38,7 +38,7 @@ obstring = $(addprefix $(obsdir)/,$(notdir $^))
 #  Paths
 #
 bindir = .
-obsdir = .
+obsdir = ./objects
 #
 #  Library paths
 #
