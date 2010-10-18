@@ -1,0 +1,41 @@
+FLNODE
+Inverted model
+  100. 1 0  6371.0
+ 22
+  .0000000   1.700000    .190867    .076138 100.000000  48.521923
+  .1250000   1.710000    .201134    .085256 100.000000  48.490913
+  .2500000   1.720000    .210380    .097818 100.000000  48.459751
+  .3750000   1.730000    .219253    .112311 100.000000  48.400162
+  .5000000   1.740000    .228279    .122794 100.000000  48.299450
+  .6250000   1.750000    .237555    .132551 100.000000  48.151669
+  .7500000   1.750000    .247152    .146092 100.000000  47.946510
+  .8750000   1.750000    .257053    .148606 100.000000  47.684666
+ 1.0000000   1.760000    .267098    .154933 100.000000  47.358845
+ 1.2500000   1.770000    .276953    .160010 100.000000  47.002232
+ 1.5000000   1.770000    .286083    .164304 100.000000  46.664417
+ 2.0000000   1.780000    .303885    .168764 100.000000  46.454338
+ 2.5000000   1.790000    .319958    .173968 100.000000  46.446640
+ 3.0000000   1.800000    .335135    .179286 100.000000  46.556034
+ 4.0000000   1.900000    .340478    .188684 100.000000  46.829041
+ 5.0000000   2.000000    .347111    .217458 100.000000  47.218689
+ 6.0000000   2.060000    .345977    .245162 100.000000  47.629414
+ 6.5999999   2.100000    .347266    .250807 100.000000  47.999454
+ 6.5999999   2.150000   1.446992    .250771 100.000000  48.001137
+ 8.0000000   2.150000   1.452546    .265222 100.000000  48.187294
+10.0000000   2.150000   1.456577    .282100 100.000000  48.339123
+10.0000000   2.150000   1.456590    .282094 100.000000  48.339638
+
+
+
+
+Line 1:  Keyword FLNODE
+Line 2:  Text
+Line 3:  reference frequency (relevant if velocity dispersion is accounted for),
+         damping flag (1=no dispersion, 3= dispersion), 
+         anisotropy flag (0=no, 1=yes, provide model file with relevant parameters!), 
+         earth radius (can be smaller than 6371, smaller values reduce computation time)
+Line 4:  number of entries
+Line 5-: values of density and velocities and Qs at depth nodes, interfaces get double node,
+         last node gives properties of homogeneous sphere below, values at nodes are used
+         to compute a spline interpolation valid in regions bewteen two interfaces,
+         depth [m], density [g/cm^3], P-velocity [km/s], S-velocity [km/s], Q_kappa, Q_mu
