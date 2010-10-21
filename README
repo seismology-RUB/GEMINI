@@ -16,6 +16,7 @@ Requirements:
 
 Compilation:
 -------------
+Set the variable F95 in your shell environment to the path to your Fortran compiler.
 Use Makefile and Make.f90 for compiling the Green function codes:
 
 * touch *.m4

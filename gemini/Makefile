@@ -85,7 +85,7 @@ OBS_GFDSV = propag.o sysminors.o stavani.o sysliq.o earthmodel_procs.o \
 #  before anything else and make starts from anew including all updated makefiles
 #
 make.incdep:
-	incdep-wf.sh $(DEPDIRS) > make.incdep
+	../bin/incdep-wf.sh $(DEPDIRS) > make.incdep
 	if (! -e mod) mkdir -p mod
 	if (! -e objects) mkdir -p objects
 -include make.incdep
