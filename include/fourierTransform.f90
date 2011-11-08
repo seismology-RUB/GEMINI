@@ -586,7 +586,7 @@
 !  returns next multiple of 2,3 and 5 greater or equal than base
 !  next235 = 2^p 3^q 5^r >= base  where p>=1, q>=0, r>=0
 !
-	integer function next235FourierTransform(base) result(next235)
+	function next235FourierTransform(base) result(next235)
 	integer :: numdiv
 	double precision :: base
 	integer :: next235

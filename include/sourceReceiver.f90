@@ -288,7 +288,7 @@
 !
 !  allocate space for receiver data
 !
-	allocate(this%xsta(this%nr),this%ysta(this%nr),this%name(this%nr),this%net(this%nr),this%depsta(this%nr),this%depsta(this%nr))
+	allocate(this%xsta(this%nr),this%ysta(this%nr),this%name(this%nr),this%net(this%nr),this%depsta(this%nr))
 	allocate(this%comp(this%nr),this%dis(this%nr),this%phi(this%nr),this%lfdnr(this%nr))
 !
 	read(iunit) (this%xsta(i),this%ysta(i),i=1,this%nr)
