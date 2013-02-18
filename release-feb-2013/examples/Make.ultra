@@ -1,0 +1,39 @@
+#--------------------------------------------------------------------------
+#	Copyright 2013 Wolfgang Friederich
+#
+#	This file is part of Gemini II.
+#
+#	Gemini II is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 2 of the License, or
+#	any later version.
+#
+#	Gemini II is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with Gemini II.  If not, see <http://www.gnu.org/licenses/>.
+#----------------------------------------------------------------------------
+#  set the SHELL
+#
+SHELL = /usr/bin/tcsh
+#----------------------------------------------------
+temp = output
+#----------------------------------------------------
+#  Example: Ultra sonics
+#  You need a path to the executables used below
+#---------------------------------------------------
+gf:
+	if (! -e $(temp)) mkdir -p $(temp)
+	gfdsvrkf -fmin 10000. -fmax 500000. -tlen 0.000256 -klim "1. 1." -ze 0. -xlen 0.001 -s 0 -fnod 500000. \
+		-sig 5. -wmrg .1 -msd "0.01 1" -on $(temp)/nodes.ultra -o $(temp)/ultra plexiglas.nm
+gf_mpi:
+	if (! -e $(temp)) mkdir -p $(temp)
+	mpirun -np 2 gfdsvrkf_mpi -p 0 -tlen 0.000256 -fmin 10000. -fmax 500000. -fnod 500000. -klim "0.5 0.5" -msd "0.01 1" \
+		-sig 5. -ze 0. -s 0 -o $(temp)/ultra_lvz_p -xlen 0.001 -nmin 2 -wmrg 0.1 plexiglas.nm
+gfseis:
+	if (! -e $(temp)) mkdir -p $(temp)
+	gfdsvrkfseis -f asc -o $(temp)/seisultra_250.asc -e 30. -dt 5.e-7 -lp "5 250000." -hp "2 20000." -p \
+		      -gvw "0.5 1.e-4" info.ultra $(temp)/ultra_lvz_p.sf

@@ -1,0 +1,129 @@
+bessj0y0.o:
+bessj1y1.o:
+dcubsplco.o:
+dfftpack.o:
+dlocate.o:
+flnm_procs.o: flnm.h
+geo2epi.o:
+greenint.o: nodesdim.h nodes.h nodesstore.h nvmax.h
+gse20.o:
+hbutcw.o:
+hbutrw.o:
+jump_solution_sph.o: earthmodel.h nodesdim.h nodes.h pi.h
+jump_solution_tor.o: earthmodel.h nodesdim.h nodes.h pi.h
+minorint.o: nodesdim.h nodes.h nodesstore.h nvmax.h
+nodes_procs.o: bsstore.h earthmodel.h layer.h nodesdim.h nodes.h nodesstore.h nvmax.h pi.h zero.h
+pythag.o:
+reciprocity.o:
+sphan2cf.o: pi.h
+sphancf.o: pi.h
+sphderivs.o: layer.h nodesdim.h nodes.h nvmax.h zero.h
+startr.o: earthmodel.h layer.h pi.h zero.h
+stavsurf.o:
+sterms.o:
+stuff.o:
+syssolidt.o: nvmax.h
+sysspher.o: nvmax.h
+torderivs.o: layer.h nodesdim.h nodes.h nvmax.h zero.h
+torint.o: nodesdim.h nodes.h nodesstore.h nvmax.h
+trim.o:
+zsplco.o:
+bsint_procs.o: bsint.h bsstore.h nvmax.h
+earthmodel_procs.o: earthmodel.h flnm.h layer.h
+layer_procs.o: earthmodel.h layer.h pi.h zero.h
+propag.o: zero.h
+stavani.o:
+sysliq.o: nvmax.h
+sysminors.o: nvmax.h
+systor.o: nvmax.h
+zelcon.o: pi.h zero.h
+zetl.o: pi.h
+dataSegy.o: binarySegy.o
+dataSegy.o: traceSegy.o
+dateTime.o: realloc.o
+dateTime.o: timeUtils.o
+diffDataSynthetics.o: commandLine.o
+diffDataSynthetics.o: sffDataSection.o
+diffDataSynthetics.o: timeSeries.o
+errorMessage.o: realloc.o
+fileUnitHandler.o: realloc.o
+flexibleType.o: kindDefinitions.o
+flexibleType.o: primitiveTypeEncoding.o
+flexibleType.o: simpleString.o
+fourierSpectrum.o: fourierTransform.o
+fourierSpectrum.o: timeSeries.o
+fourierTransform.o: mathConstants.o
+frequencyTime.o: errorMessage.o
+frequencyTime.o: fourierTransform.o
+geminiEarthModel.o: errorMessage.o
+geminiEarthModel.o: fileUnitHandler.o
+geminiEarthModel.o: flexibleType.o
+geminiEarthModel.o: locatePoint.o
+geminiEarthModel.o: streamAccess.o
+gfdsvrkf.o: commandLine.o
+gfdsvrkf.o: mathConstants.o
+gfdsvrkf.o: primitiveTypeEncoding.o
+gfdsvrkf.o: streamAccess.o
+gfdsvrkf_mpi.o: commandLine.o
+gfdsvrkf_mpi.o: mathConstants.o
+gfdsvrkf_mpi.o: mpiSupport.o
+gfdsvrkf_mpi.o: primitiveTypeEncoding.o
+gfdsvrkf_mpi.o: streamAccess.o
+gfdsvrkfseis.o: commandLine.o
+gfdsvrkfseis.o: errorMessage.o
+gfdsvrkfseis.o: fileUnitHandler.o
+gfdsvrkfseis.o: greenFrequencyWavenumber.o
+gfdsvrkfseis.o: greenSection.o
+gfdsvrkfseis.o: mathConstants.o
+gfdsvrkfseis.o: sourceReceiver.o
+greenFrequencyWavenumber.o: errorMessage.o
+greenFrequencyWavenumber.o: fileUnitHandler.o
+greenFrequencyWavenumber.o: fourierTransform.o
+greenFrequencyWavenumber.o: geminiEarthModel.o
+greenFrequencyWavenumber.o: mathConstants.o
+greenFrequencyWavenumber.o: streamAccess.o
+greenFrequencyWavenumber.o: wavenumberIntegralMapping.o
+greenSection.o: dataSegy.o
+greenSection.o: errorMessage.o
+greenSection.o: frequencyTime.o
+greenSection.o: greenDisplacementSpectrum.o
+greenSection.o: greenFrequencyWavenumber.o
+greenSection.o: instrumentResponse.o
+greenSection.o: mathConstants.o
+greenSection.o: sffDatablock.o
+greenSection.o: sffHeader.o
+greenSection.o: sourceReceiver.o
+greenSection.o: ssaDataset.o
+greenSection.o: timeSeries.o
+instrumentResponse.o: errorMessage.o
+instrumentResponse.o: flexibleType.o
+instrumentResponse.o: mathConstants.o
+recursiveFilterCoefficients.o: mathConstants.o
+seismicEvent.o: dateTime.o
+seismicEvent.o: errorMessage.o
+seismicEvent.o: flexibleType.o
+seismicEvent.o: mathConstants.o
+seismicStation.o: dateTime.o
+seismicStation.o: errorMessage.o
+seismicStation.o: flexibleType.o
+seismicStation.o: mathConstants.o
+sffDataSection.o: sffDatablock.o
+sffDataSection.o: sffHeader.o
+sffDatablock.o: sffFree.o
+sffDatablock.o: sffInfo.o
+sffHeader.o: sffFree.o
+sffHeader.o: sffSource.o
+sourceReceiver.o: dayOfYear.o
+sourceReceiver.o: mathConstants.o
+sourceReceiver.o: realloc.o
+sourceReceiver.o: seismicEvent.o
+sourceReceiver.o: seismicStation.o
+sourceReceiver.o: sortArray.o
+ssaDataset.o: streamAccess.o
+streamAccess.o: flexibleType.o
+streamAccess.o: kindDefinitions.o
+timeSeries.o: dateTime.o
+timeSeries.o: filterCoefficientsDecimate.o
+timeSeries.o: fourierTransform.o
+timeSeries.o: realloc.o
+timeSeries.o: recursiveFilterCoefficients.o

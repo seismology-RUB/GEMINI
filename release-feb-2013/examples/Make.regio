@@ -1,0 +1,35 @@
+#--------------------------------------------------------------------------
+#	Copyright 2013 Wolfgang Friederich
+#
+#	This file is part of Gemini II.
+#
+#	Gemini II is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 2 of the License, or
+#	any later version.
+#
+#	Gemini II is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with Gemini II.  If not, see <http://www.gnu.org/licenses/>.
+#----------------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#  set the SHELL
+#
+SHELL = /usr/bin/tcsh
+#----------------------------------------------------
+#  Example: regional seismology
+#  You need a path to the executables used below
+#----------------------------------------------------
+temp = output
+gf:
+	if (! -e $(temp)) mkdir -p $(temp)
+	gfdsvrkf -rst -p 0 -tlen 512 -fmin 0.000 -fmax 0.2 -fnod 0.2 -klim "0.5 0.5" -msd "100000. 3" \
+		-sig 5. -ze 0. -s 1 -o $(temp)/gfregio -on $(temp)/nodes.regio -xlen 5000. -nmin 2 -wmrg 0.1 ak135q.nm
+gfseis:
+	if (! -e $(temp)) mkdir -p $(temp)
+	gfdsvrkfseis -f asc -o $(temp)/seisregio.asc -e 30. -dt 0.5 -lp "5 0.1" -hp "2 0.01"  \
+		-gvw "2.0 100." -zs 45000. info.aeg3c $(temp)/gfregio.sm

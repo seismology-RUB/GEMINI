@@ -1,0 +1,893 @@
+GFORTRAN module version '0' created from streamAccess.f90 on Mon Feb 18 16:14:48 2013
+MD5:11b68da4e8ab0337867da129049f604a -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () ()
+() () (2 3 4 5 6 7 8 9 10 11 12 13) ())
+
+(('ndataset' '' 14) ('length' '' 15) ('grouptag' '' 16) ('groupname' ''
+17) ('nsubgroup' '' 18))
+
+(('creategroupstreamaccess' 'streamaccess' 19 20) ('cleargrouptree'
+'streamaccess' 21) ('dealloc' 'flexibletype' 22 23 24 25) ('new'
+'flexibletype' 26 27) ('readdataset2darraystreamaccess' 'streamaccess'
+28 29 30 31) ('print' 'flexibletype' 32) ('readdatasetvectorstreamaccess'
+'streamaccess' 33 34 35 36 37 38 39) ('writedataset2darraystreamaccess'
+'streamaccess' 40 41 42 43) ('writedatasetvectorstreamaccess'
+'streamaccess' 44 45 46 47 48 49 50))
+
+()
+
+()
+
+(51 'adddatasetstreamaccess' 'streamaccess' 'adddatasetstreamaccess' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN
+0 0 0 UNKNOWN ()) 52 0 (53 54) () 0 () () () 0 0)
+55 'addsubgroupstreamaccess' 'streamaccess' 'addsubgroupstreamaccess' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 56 0 (57 58) () 0 () () () 0
+0)
+59 'converttocharsimplestring' 'simplestring' 'converttocharsimplestring'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 60 0 (61 62) () 0 () () () 0 0)
+8 'createcharflexibletype' 'flexibletype' 'createcharflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 63 0 (64 65) () 0 () () () 0 0)
+10 'createcomplexflexibletype' 'flexibletype' 'createcomplexflexibletype'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 66 0 (67 68) () 0 () () () 0 0)
+26 'createdatasetstreamaccess' 'streamaccess' 'createdatasetstreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 69 0 (70 71 72 73) () 0 () ()
+() 0 0)
+9 'createdoublecomplexflexibletype' 'flexibletype'
+'createdoublecomplexflexibletype' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 74 0 (
+75 76) () 0 () () () 0 0)
+11 'createdoubleflexibletype' 'flexibletype' 'createdoubleflexibletype'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 77 0 (78 79) () 0 () () () 0 0)
+80 'createfilestreamaccess' 'streamaccess' 'createfilestreamaccess' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4
+0 0 INTEGER ()) 81 0 (82 83 84) () 85 () () () 0 0)
+13 'createintegerflexibletype' 'flexibletype' 'createintegerflexibletype'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 86 0 (87 88) () 0 () () () 0 0)
+20 'createpostallocatedgroupstreamaccess' 'streamaccess'
+'createpostallocatedgroupstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 89 0 (
+90 91 92) () 0 () () () 0 0)
+19 'createpreallocatedgroupstreamaccess' 'streamaccess'
+'createpreallocatedgroupstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 93 0 (
+94 95 96 97 98) () 0 () () () 0 0)
+12 'createrealflexibletype' 'flexibletype' 'createrealflexibletype' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN
+0 0 0 UNKNOWN ()) 99 0 (100 101) () 0 () () () 0 0)
+27 'createsimplestring' 'simplestring' 'createsimplestring' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 102 0 (103 104) () 0 () () () 0 0)
+105 'data_stream_access' 'streamaccess' 'data_stream_access' 1 ((
+DERIVED UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN POINTER_COMP
+PRIVATE_COMP) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((106 'filepos_start'
+(INTEGER 8 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (107 'rank' (INTEGER 4 0 0 INTEGER ())
+() (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ()) (108 'dims' (INTEGER 4 0 0 INTEGER ()) (1 DEFERRED ()
+()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
+POINTER) UNKNOWN-ACCESS (NULL (UNKNOWN 0 0 0 UNKNOWN ()) 0)) (109
+'datatype' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())) PRIVATE (() ()) () 0 0)
+24 'deallocfilestreamaccess' 'streamaccess' 'deallocfilestreamaccess' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 110 0 (111) () 0 () () () 0 0)
+112 'deallocflexibletype' 'flexibletype' 'deallocflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 113 0 (114) () 0 () () () 0 0)
+25 'deallocsimplestring' 'simplestring' 'deallocsimplestring' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 115 0 (116) () 0 () () () 0 0)
+117 'file_stream_access' 'streamaccess' 'file_stream_access' 1 ((
+DERIVED UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN PRIVATE_COMP) (
+UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((118 'lu' (INTEGER 4 0 0 INTEGER
+()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ()) (119 'current_file_pos' (INTEGER 8 0 0 INTEGER ()) ()
+(UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS
+()) (120 'filename' (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '132'))) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())) PRIVATE (() ()) () 0 0)
+121 'flexible' 'flexibletype' 'flexible' 1 ((DERIVED UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN POINTER_COMP PRIVATE_COMP) (UNKNOWN 0 0 0
+UNKNOWN ()) 0 0 () () 0 ((122 'datatype' (INTEGER 4 0 0 INTEGER ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())
+(123 'val_int' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (124 'val_real' (REAL 4
+0 0 REAL ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ()) (125 'val_double' (REAL 8 0 0 REAL ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())
+(126 'val_complex' (COMPLEX 4 0 0 COMPLEX ()) () (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (127
+'val_double_complex' (COMPLEX 8 0 0 COMPLEX ()) () (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (128
+'val_string' (DERIVED 129 0 0 DERIVED ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())) PRIVATE (() ()) () 0 0)
+130 'flexibletype' 'flexibletype' 'flexibletype' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+22 'fullydeallocdatasetstreamaccess' 'streamaccess'
+'fullydeallocdatasetstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 131 0 (
+132) () 0 () () () 0 0)
+133 'getcurrentfilepositionstreamaccess' 'streamaccess'
+'getcurrentfilepositionstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 8 0 0 INTEGER ()) 134 0 (
+135) () 136 () () () 0 0)
+137 'getdatasetselectedstreamaccess' 'streamaccess'
+'getdatasetselectedstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN POINTER FUNCTION ALWAYS_EXPLICIT) (DERIVED 105
+0 0 DERIVED ()) 138 0 (139 140) () 141 () () () 0 0)
+142 'getfileunitstreamaccess' 'streamaccess' 'getfileunitstreamaccess' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4
+0 0 INTEGER ()) 143 0 (144) () 142 () () () 0 0)
+17 'getnamegroupstreamaccess' 'streamaccess' 'getnamegroupstreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (
+CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '132')))
+145 0 (146) () 17 () () () 0 0)
+14 'getndsgroupstreamaccess' 'streamaccess' 'getndsgroupstreamaccess' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4
+0 0 INTEGER ()) 147 0 (148) () 14 () () () 0 0)
+18 'getnsubgroupstreamaccess' 'streamaccess' 'getnsubgroupstreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (
+INTEGER 4 0 0 INTEGER ()) 149 0 (150) () 18 () () () 0 0)
+151 'getparentstreamaccess' 'streamaccess' 'getparentstreamaccess' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN POINTER FUNCTION
+ALWAYS_EXPLICIT) (DERIVED 152 0 0 DERIVED ()) 153 0 (154) () 155 () () ()
+0 0)
+16 'gettaggroupstreamaccess' 'streamaccess' 'gettaggroupstreamaccess' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4
+0 0 INTEGER ()) 156 0 (157) () 16 () () () 0 0)
+158 'getvectorsizedatastreamaccess' 'streamaccess'
+'getvectorsizedatastreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 159 0 (160) () 161 ()
+() () 0 0)
+152 'group_stream_access' 'streamaccess' 'group_stream_access' 1 ((
+DERIVED UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN POINTER_COMP
+PRIVATE_COMP) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((162 'filepos' (
+INTEGER 8 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (163 'tag' (INTEGER 4 0 0 INTEGER ())
+() (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ()) (164 'name' (CHARACTER 1 0 0 CHARACTER ((CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '132'))) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (165 'parent' (DERIVED
+152 0 0 DERIVED ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN POINTER) UNKNOWN-ACCESS (NULL (UNKNOWN 0 0 0 UNKNOWN ()) 0)) (
+166 'subgroup' (DERIVED 152 0 0 DERIVED ()) (1 DEFERRED () ()) (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION POINTER)
+UNKNOWN-ACCESS (NULL (UNKNOWN 0 0 0 UNKNOWN ()) 0)) (167 'maxsubgroup' (
+INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (168 'lastsubgroup' (INTEGER 4 0 0
+INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ()) (169 'dataset' (DERIVED 105 0 0 DERIVED ()) (1
+DEFERRED () ()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION POINTER) UNKNOWN-ACCESS (NULL (UNKNOWN 0 0 0 UNKNOWN ()) 0)) (
+170 'maxdset' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (171 'lastdset' (
+INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())) PRIVATE (() ()) () 0 0)
+172 'incrementcurrentfilepositionstreamaccess' 'streamaccess'
+'incrementcurrentfilepositionstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 8 0 0 INTEGER ()) 173 0 (
+174 175) () 176 () () () 0 0)
+177 'kinddefinitions' 'kinddefinitions' 'kinddefinitions' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+15 'lengthsimplestring' 'simplestring' 'lengthsimplestring' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0
+0 INTEGER ()) 178 0 (179) () 15 () () () 0 0)
+180 'longint' 'kinddefinitions' 'longint' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '8') () 0 () () () 0 0)
+181 'null' '(intrinsic)' 'null' 1 ((PROCEDURE UNKNOWN-INTENT
+INTRINSIC-PROC UNKNOWN UNKNOWN FUNCTION) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0
+() () 181 () () () 0 0)
+182 'nullifydatasetstreamaccess' 'streamaccess'
+'nullifydatasetstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 183 0 (184) () 0 ()
+() () 0 0)
+23 'nullifygroupstreamaccess' 'streamaccess' 'nullifygroupstreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 185 0 (186) () 0 () () () 0 0)
+187 'openfilestreamaccess' 'streamaccess' 'openfilestreamaccess' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0
+0 INTEGER ()) 188 0 (189 190 191) () 192 () () () 0 0)
+193 'primitivetypeencoding' 'primitivetypeencoding'
+'primitivetypeencoding' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+32 'printflexibletype' 'flexibletype' 'printflexibletype' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 194 0 (195) () 0 () () () 0 0)
+34 'readdatasetcharvectorstreamaccess' 'streamaccess'
+'readdatasetcharvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 196 0 (197 198 199) () 0 () () () 0 0)
+29 'readdatasetcomplex2darraystreamaccess' 'streamaccess'
+'readdatasetcomplex2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 200 0 (201 202 203) () 0 () () () 0 0)
+36 'readdatasetcomplexvectorstreamaccess' 'streamaccess'
+'readdatasetcomplexvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 204 0 (205 206 207) () 0 () () () 0 0)
+30 'readdatasetdouble2darraystreamaccess' 'streamaccess'
+'readdatasetdouble2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 208 0 (209 210 211) () 0 () () () 0 0)
+28 'readdatasetdoublecomplex2darraystreamaccess' 'streamaccess'
+'readdatasetdoublecomplex2darraystreamaccess' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 212 0 (213 214 215) () 0 () () () 0 0)
+35 'readdatasetdoublecomplexvectorstreamaccess' 'streamaccess'
+'readdatasetdoublecomplexvectorstreamaccess' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 216 0 (217 218 219) () 0 () () () 0 0)
+37 'readdatasetdoublevectorstreamaccess' 'streamaccess'
+'readdatasetdoublevectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 220 0 (221 222 223) () 0 () () () 0 0)
+33 'readdatasetflexiblevectorstreamaccess' 'streamaccess'
+'readdatasetflexiblevectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 224 0 (225 226 227) () 0 () () () 0 0)
+39 'readdatasetintegervectorstreamaccess' 'streamaccess'
+'readdatasetintegervectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 228 0 (229 230 231) () 0 () () () 0 0)
+31 'readdatasetreal2darraystreamaccess' 'streamaccess'
+'readdatasetreal2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 232 0 (233 234 235) () 0 () () () 0 0)
+38 'readdatasetrealvectorstreamaccess' 'streamaccess'
+'readdatasetrealvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 236 0 (237 238 239) () 0 () () () 0 0)
+240 'readgroupstreamaccess' 'streamaccess' 'readgroupstreamaccess' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE RECURSIVE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 241 0 (242 243 244) () 0 ()
+() () 0 0)
+245 'readinfodatastreamaccess' 'streamaccess' 'readinfodatastreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 246 0 (247 248) () 0 () () () 0 0)
+249 'readsaflexibletype' 'flexibletype' 'readsaflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 250 0 (251 252 253 254) () 0 () () () 0 0)
+255 'reallocatedatasetstreamaccess' 'streamaccess'
+'reallocatedatasetstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN DIMENSION POINTER FUNCTION ALWAYS_EXPLICIT) (DERIVED 105 0
+0 DERIVED ()) 256 0 (257 258) (1 DEFERRED () ()) 259 () () () 0 0)
+260 'reallocategroupstreamaccess' 'streamaccess'
+'reallocategroupstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN DIMENSION POINTER FUNCTION ALWAYS_EXPLICIT) (DERIVED 152 0
+0 DERIVED ()) 261 0 (262 263) (1 DEFERRED () ()) 264 () () () 0 0)
+21 'recursivedeallocgroupstreamaccess' 'streamaccess'
+'recursivedeallocgroupstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE RECURSIVE) (UNKNOWN 0 0 0 UNKNOWN ())
+265 0 (266) () 0 () () () 0 0)
+267 'selected_int_kind' '(intrinsic)' 'selected_int_kind' 1 ((PROCEDURE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN FUNCTION) (REAL 4 0 0 REAL ())
+0 0 () () 267 () () () 0 0)
+268 'setcurrentfilepositionstreamaccess' 'streamaccess'
+'setcurrentfilepositionstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 269 0 (
+270 271) () 0 () () () 0 0)
+129 'simple_string' 'simplestring' 'simple_string' 1 ((DERIVED
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN POINTER_COMP PRIVATE_COMP) (
+UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((272 'zeichen' (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1'))) (1 DEFERRED ()
+()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
+POINTER) UNKNOWN-ACCESS ())) PRIVATE (() ()) () 0 0)
+273 'simplestring' 'simplestring' 'simplestring' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+274 'streamaccess' 'streamaccess' 'streamaccess' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+275 't_char' 'primitivetypeencoding' 't_char' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '6') () 0 () ()
+() 0 0)
+276 't_complex' 'primitivetypeencoding' 't_complex' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '4') () 0 () ()
+() 0 0)
+277 't_double' 'primitivetypeencoding' 't_double' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () ()
+() 0 0)
+278 't_double_complex' 'primitivetypeencoding' 't_double_complex' 1 ((
+PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4
+0 0 INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '5') () 0
+() () () 0 0)
+279 't_flexible' 'primitivetypeencoding' 't_flexible' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '7') () 0 () ()
+() 0 0)
+280 't_integer' 'primitivetypeencoding' 't_integer' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () 0 () ()
+() 0 0)
+281 't_logical' 'primitivetypeencoding' 't_logical' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '8') () 0 () ()
+() 0 0)
+282 't_real' 'primitivetypeencoding' 't_real' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '2') () 0 () ()
+() 0 0)
+283 'traversepathstreamaccess' 'streamaccess' 'traversepathstreamaccess'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+RECURSIVE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 284 0 (285 286 287
+288 289) () 0 () () () 0 0)
+290 'typeflexibletype' 'flexibletype' 'typeflexibletype' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER
+()) 291 0 (292) () 293 () () () 0 0)
+2 'valuecharflexibletype' 'flexibletype' 'valuecharflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 294 0 (295 296) () 0 () () () 0 0)
+4 'valuecomplexflexibletype' 'flexibletype' 'valuecomplexflexibletype' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 297 0 (298 299) () 0 () () () 0 0)
+3 'valuedoublecomplexflexibletype' 'flexibletype'
+'valuedoublecomplexflexibletype' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 300 0 (
+301 302) () 0 () () () 0 0)
+5 'valuedoubleflexibletype' 'flexibletype' 'valuedoubleflexibletype' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN
+0 0 0 UNKNOWN ()) 303 0 (304 305) () 0 () () () 0 0)
+7 'valueintegerflexibletype' 'flexibletype' 'valueintegerflexibletype' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 306 0 (307 308) () 0 () () () 0 0)
+6 'valuerealflexibletype' 'flexibletype' 'valuerealflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 309 0 (310 311) () 0 () () () 0 0)
+312 'verbosestreamaccess' 'streamaccess' 'verbosestreamaccess' 1 ((
+VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (LOGICAL 4 0
+0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+45 'writedatasetcharvectorstreamaccess' 'streamaccess'
+'writedatasetcharvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 313 0 (314 315 316) () 0 () () () 0 0)
+41 'writedatasetcomplex2darraystreamaccess' 'streamaccess'
+'writedatasetcomplex2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 317 0 (318 319 320) () 0 () () () 0 0)
+47 'writedatasetcomplexvectorstreamaccess' 'streamaccess'
+'writedatasetcomplexvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 321 0 (322 323 324) () 0 () () () 0 0)
+42 'writedatasetdouble2darraystreamaccess' 'streamaccess'
+'writedatasetdouble2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 325 0 (326 327 328) () 0 () () () 0 0)
+40 'writedatasetdoublecomplex2darraystreamaccess' 'streamaccess'
+'writedatasetdoublecomplex2darraystreamaccess' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 329 0 (330 331 332) () 0 () () () 0 0)
+46 'writedatasetdoublecomplexvectorstreamaccess' 'streamaccess'
+'writedatasetdoublecomplexvectorstreamaccess' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 333 0 (334 335 336) () 0 () () () 0 0)
+48 'writedatasetdoublevectorstreamaccess' 'streamaccess'
+'writedatasetdoublevectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 337 0 (338 339 340) () 0 () () () 0 0)
+44 'writedatasetflexiblevectorstreamaccess' 'streamaccess'
+'writedatasetflexiblevectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 341 0 (342 343 344) () 0 () () () 0 0)
+50 'writedatasetintegervectorstreamaccess' 'streamaccess'
+'writedatasetintegervectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 345 0 (346 347 348) () 0 () () () 0 0)
+43 'writedatasetreal2darraystreamaccess' 'streamaccess'
+'writedatasetreal2darraystreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 349 0 (350 351 352) () 0 () () () 0 0)
+49 'writedatasetrealvectorstreamaccess' 'streamaccess'
+'writedatasetrealvectorstreamaccess' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 353 0 (354 355 356) () 0 () () () 0 0)
+357 'writegroupstreamaccess' 'streamaccess' 'writegroupstreamaccess' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE RECURSIVE)
+(UNKNOWN 0 0 0 UNKNOWN ()) 358 0 (359 360) () 0 () () () 0 0)
+361 'writesaflexibletype' 'flexibletype' 'writesaflexibletype' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 362 0 (363 364 365 366) () 0 () () () 0 0)
+64 'this' '' 'this' 63 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+68 'value' '' 'value' 66 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () () 0 () () () 0 0)
+67 'this' '' 'this' 66 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+65 'value' '' 'value' 63 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+76 'value' '' 'value' 74 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (COMPLEX 8 0 0 COMPLEX ()) 0 0 () () 0 () () () 0 0)
+79 'value' '' 'value' 77 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+78 'this' '' 'this' 77 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+87 'this' '' 'this' 86 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+88 'value' '' 'value' 86 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+100 'this' '' 'this' 99 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+101 'value' '' 'value' 99 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+103 'this' '' 'this' 102 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 129 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+104 'string' '' 'string' 102 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () ()
+() 0 0)
+114 'this' '' 'this' 113 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+75 'this' '' 'this' 74 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+179 'this' '' 'this' 178 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 129 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+195 'this' '' 'this' 194 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+254 'nbytes' '' 'nbytes' 250 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+253 'filepos' '' 'filepos' 250 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 8 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+252 'lu' '' 'lu' 250 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+296 'this' '' 'this' 294 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+295 'val' '' 'val' 294 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+116 'this' '' 'this' 115 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 129 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+299 'this' '' 'this' 297 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+298 'val' '' 'val' 297 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(COMPLEX 4 0 0 COMPLEX ()) 0 0 () () 0 () () () 0 0)
+304 'val' '' 'val' 303 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+302 'this' '' 'this' 300 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+308 'this' '' 'this' 306 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+307 'val' '' 'val' 306 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+305 'this' '' 'this' 303 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+310 'val' '' 'val' 309 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+364 'lu' '' 'lu' 362 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+363 'this' '' 'this' 362 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+366 'nbytes' '' 'nbytes' 362 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+365 'filepos' '' 'filepos' 362 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 8 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+311 'this' '' 'this' 309 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+301 'val' '' 'val' 300 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(COMPLEX 8 0 0 COMPLEX ()) 0 0 () () 0 () () () 0 0)
+62 'string' '' 'string' 60 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () ()
+() 0 0)
+61 'this' '' 'this' 60 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 129 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+251 'this' '' 'this' 250 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+293 'typ' '' 'typ' 291 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+292 'this' '' 'this' 291 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+82 'this' '' 'this' 81 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+83 'lu' '' 'lu' 81 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+84 'filename' '' 'filename' 81 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () ()
+() 0 0)
+85 'ios' '' 'ios' 81 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+189 'this' '' 'this' 188 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+190 'lu' '' 'lu' 188 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+191 'filename' '' 'filename' 188 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () ()
+() 0 0)
+192 'ios' '' 'ios' 188 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+111 'this' '' 'this' 110 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+144 'this' '' 'this' 143 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+135 'this' '' 'this' 134 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+136 'filepos' '' 'filepos' 134 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN RESULT) (INTEGER 8 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+174 'this' '' 'this' 173 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+175 'n' '' 'n' 173 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+176 'filepos' '' 'filepos' 173 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN RESULT) (INTEGER 8 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+270 'this' '' 'this' 269 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+271 'filepos' '' 'filepos' 269 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 8 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+90 'this' '' 'this' 89 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+91 'name' '' 'name' 89 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+92 'tag' '' 'tag' 89 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+94 'this' '' 'this' 93 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+95 'name' '' 'name' 93 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+96 'tag' '' 'tag' 93 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+97 'maxsubgroup' '' 'maxsubgroup' 93 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () ()
+0 () () () 0 0)
+98 'maxdset' '' 'maxdset' 93 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+266 'this' '' 'this' 265 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+186 'this' '' 'this' 185 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+57 'this' '' 'this' 56 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+58 'group' '' 'group' 56 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+53 'this' '' 'this' 52 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+54 'dset' '' 'dset' 52 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+148 'this' '' 'this' 147 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+150 'this' '' 'this' 149 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+157 'this' '' 'this' 156 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+146 'this' '' 'this' 145 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+154 'this' '' 'this' 153 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+155 'parent' '' 'parent' 153 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN POINTER RESULT ALWAYS_EXPLICIT) (DERIVED 152 0 0 DERIVED
+()) 0 0 () () 0 () () () 0 0)
+139 'this' '' 'this' 138 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+140 'k' '' 'k' 138 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+141 'dset' '' 'dset' 138 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN POINTER RESULT ALWAYS_EXPLICIT) (DERIVED 105 0 0 DERIVED ()) 0 0
+() () 0 () () () 0 0)
+359 'this' '' 'this' 358 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+360 'fda' '' 'fda' 358 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+242 'this' '' 'this' 241 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+243 'fda' '' 'fda' 241 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+244 'readinfodset' '' 'readinfodset' 241 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN OPTIONAL DUMMY) (LOGICAL 4 0 0 LOGICAL ())
+0 0 () () 0 () () () 0 0)
+160 'this' '' 'this' 159 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+262 'p' '' 'p' 261 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+263 'n' '' 'n' 261 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+264 'newp' '' 'newp' 261 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER RESULT ALWAYS_EXPLICIT) (DERIVED 152 0 0
+DERIVED ()) 0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+285 'this' '' 'this' 284 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+286 'depth' '' 'depth' 284 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+287 'path' '' 'path' 284 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+288 'group' '' 'group' 284 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN POINTER DUMMY) (DERIVED 152 0 0 DERIVED ()) 0 0 () () 0
+() () () 0 0)
+289 'dset' '' 'dset' 284 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN POINTER DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+70 'this' '' 'this' 69 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+71 'rank' '' 'rank' 69 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+72 'dims' '' 'dims' 69 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+73 'datatype' '' 'datatype' 69 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0
+0)
+132 'this' '' 'this' 131 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+184 'this' '' 'this' 183 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+257 'p' '' 'p' 256 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+258 'n' '' 'n' 256 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+259 'newp' '' 'newp' 256 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER RESULT ALWAYS_EXPLICIT) (DERIVED 105 0 0
+DERIVED ()) 0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+247 'this' '' 'this' 246 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+248 'fda' '' 'fda' 246 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+161 'n' '' 'n' 159 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+346 'this' '' 'this' 345 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+347 'fda' '' 'fda' 345 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+348 'd' '' 'd' 345 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+354 'this' '' 'this' 353 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+355 'fda' '' 'fda' 353 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+356 'd' '' 'd' 353 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+339 'fda' '' 'fda' 337 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+338 'this' '' 'this' 337 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+340 'd' '' 'd' 337 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+323 'fda' '' 'fda' 321 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+322 'this' '' 'this' 321 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+324 'd' '' 'd' 321 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+335 'fda' '' 'fda' 333 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+334 'this' '' 'this' 333 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+336 'd' '' 'd' 333 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (COMPLEX 8 0 0 COMPLEX ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+314 'this' '' 'this' 313 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+315 'fda' '' 'fda' 313 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+316 'd' '' 'd' 313 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+342 'this' '' 'this' 341 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+343 'fda' '' 'fda' 341 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+344 'd' '' 'd' 341 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+350 'this' '' 'this' 349 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+351 'fda' '' 'fda' 349 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+352 'd' '' 'd' 349 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+327 'fda' '' 'fda' 325 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+326 'this' '' 'this' 325 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+328 'd' '' 'd' 325 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+319 'fda' '' 'fda' 317 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+318 'this' '' 'this' 317 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+320 'd' '' 'd' 317 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () (2
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+331 'fda' '' 'fda' 329 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+330 'this' '' 'this' 329 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+332 'd' '' 'd' 329 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (COMPLEX 8 0 0 COMPLEX ()) 0 0 () (2
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+229 'this' '' 'this' 228 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+230 'fda' '' 'fda' 228 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+231 'd' '' 'd' 228 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+238 'fda' '' 'fda' 236 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+237 'this' '' 'this' 236 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+239 'd' '' 'd' 236 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 DEFERRED
+() ()) 0 () () () 0 0)
+222 'fda' '' 'fda' 220 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+221 'this' '' 'this' 220 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+223 'd' '' 'd' 220 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (1 DEFERRED
+() ()) 0 () () () 0 0)
+206 'fda' '' 'fda' 204 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+205 'this' '' 'this' 204 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+207 'd' '' 'd' 204 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+218 'fda' '' 'fda' 216 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+217 'this' '' 'this' 216 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+219 'd' '' 'd' 216 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (COMPLEX 8 0 0 COMPLEX ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+198 'fda' '' 'fda' 196 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+197 'this' '' 'this' 196 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+199 'd' '' 'd' 196 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '80'))) 0 0 () (1 DEFERRED () ()) 0 () () ()
+0 0)
+226 'fda' '' 'fda' 224 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+227 'd' '' 'd' 224 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (DERIVED 121 0 0 DERIVED ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+225 'this' '' 'this' 224 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+233 'this' '' 'this' 232 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+234 'fda' '' 'fda' 232 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+235 'd' '' 'd' 232 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 DEFERRED
+() () () ()) 0 () () () 0 0)
+210 'fda' '' 'fda' 208 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+209 'this' '' 'this' 208 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+211 'd' '' 'd' 208 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (2 DEFERRED
+() () () ()) 0 () () () 0 0)
+202 'fda' '' 'fda' 200 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+201 'this' '' 'this' 200 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+203 'd' '' 'd' 200 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () (2
+DEFERRED () () () ()) 0 () () () 0 0)
+214 'fda' '' 'fda' 212 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN TARGET DUMMY) (DERIVED 117 0 0 DERIVED ()) 0 0 () () 0 () () ()
+0 0)
+213 'this' '' 'this' 212 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 105 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+215 'd' '' 'd' 212 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION POINTER DUMMY) (COMPLEX 8 0 0 COMPLEX ()) 0 0 () (2
+DEFERRED () () () ()) 0 () () () 0 0)
+)
+
+('adddatasetstreamaccess' 0 51 'addsubgroupstreamaccess' 0 55
+'converttocharsimplestring' 0 59 'createcharflexibletype' 0 8
+'createcomplexflexibletype' 0 10 'createdatasetstreamaccess' 0 26
+'createdoublecomplexflexibletype' 0 9 'createdoubleflexibletype' 0 11
+'createfilestreamaccess' 0 80 'createintegerflexibletype' 0 13
+'createpostallocatedgroupstreamaccess' 0 20
+'createpreallocatedgroupstreamaccess' 0 19 'createrealflexibletype' 0 12
+'createsimplestring' 0 27 'data_stream_access' 0 105
+'deallocfilestreamaccess' 0 24 'deallocflexibletype' 0 112
+'deallocsimplestring' 0 25 'file_stream_access' 0 117 'flexible' 0 121
+'flexibletype' 0 130 'fullydeallocdatasetstreamaccess' 0 22
+'getcurrentfilepositionstreamaccess' 0 133
+'getdatasetselectedstreamaccess' 0 137 'getfileunitstreamaccess' 0 142
+'getnamegroupstreamaccess' 0 17 'getndsgroupstreamaccess' 0 14
+'getnsubgroupstreamaccess' 0 18 'getparentstreamaccess' 0 151
+'gettaggroupstreamaccess' 0 16 'getvectorsizedatastreamaccess' 0 158
+'group_stream_access' 0 152 'incrementcurrentfilepositionstreamaccess' 0
+172 'kinddefinitions' 0 177 'lengthsimplestring' 0 15 'longint' 0 180
+'null' 0 181 'nullifydatasetstreamaccess' 0 182 'nullifygroupstreamaccess'
+0 23 'openfilestreamaccess' 0 187 'primitivetypeencoding' 0 193
+'printflexibletype' 0 32 'readdatasetcharvectorstreamaccess' 0 34
+'readdatasetcomplex2darraystreamaccess' 0 29
+'readdatasetcomplexvectorstreamaccess' 0 36
+'readdatasetdouble2darraystreamaccess' 0 30
+'readdatasetdoublecomplex2darraystreamaccess' 0 28
+'readdatasetdoublecomplexvectorstreamaccess' 0 35
+'readdatasetdoublevectorstreamaccess' 0 37
+'readdatasetflexiblevectorstreamaccess' 0 33
+'readdatasetintegervectorstreamaccess' 0 39
+'readdatasetreal2darraystreamaccess' 0 31
+'readdatasetrealvectorstreamaccess' 0 38 'readgroupstreamaccess' 0 240
+'readinfodatastreamaccess' 0 245 'readsaflexibletype' 0 249
+'reallocatedatasetstreamaccess' 0 255 'reallocategroupstreamaccess' 0
+260 'recursivedeallocgroupstreamaccess' 0 21 'selected_int_kind' 0 267
+'setcurrentfilepositionstreamaccess' 0 268 'simple_string' 0 129
+'simplestring' 0 273 'streamaccess' 0 274 't_char' 0 275 't_complex' 0
+276 't_double' 0 277 't_double_complex' 0 278 't_flexible' 0 279
+'t_integer' 0 280 't_logical' 0 281 't_real' 0 282
+'traversepathstreamaccess' 0 283 'typeflexibletype' 0 290
+'valuecharflexibletype' 0 2 'valuecomplexflexibletype' 0 4
+'valuedoublecomplexflexibletype' 0 3 'valuedoubleflexibletype' 0 5
+'valueintegerflexibletype' 0 7 'valuerealflexibletype' 0 6
+'verbosestreamaccess' 0 312 'writedatasetcharvectorstreamaccess' 0 45
+'writedatasetcomplex2darraystreamaccess' 0 41
+'writedatasetcomplexvectorstreamaccess' 0 47
+'writedatasetdouble2darraystreamaccess' 0 42
+'writedatasetdoublecomplex2darraystreamaccess' 0 40
+'writedatasetdoublecomplexvectorstreamaccess' 0 46
+'writedatasetdoublevectorstreamaccess' 0 48
+'writedatasetflexiblevectorstreamaccess' 0 44
+'writedatasetintegervectorstreamaccess' 0 50
+'writedatasetreal2darraystreamaccess' 0 43
+'writedatasetrealvectorstreamaccess' 0 49 'writegroupstreamaccess' 0 357
+'writesaflexibletype' 0 361)

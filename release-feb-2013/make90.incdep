@@ -1,0 +1,87 @@
+mpiSupport.o:
+mathConstants.o:
+ssaDataset.o: streamAccess.o
+sffDataSection.o: sffHeader.o sffDatablock.o
+seismicEvent.o: mathConstants.o errorMessage.o flexibleType.o dateTime.o
+fourierSpectrum.o: fourierTransform.o timeSeries.o
+dataSegy.o: traceSegy.o binarySegy.o
+fourierTransform.o: mathConstants.o
+timeSeries.o: fourierTransform.o realloc.o recursiveFilterCoefficients.o filterCoefficientsDecimate.o dateTime.o
+fileUnitHandler.o: realloc.o
+streamAccess.o: flexibleType.o kindDefinitions.o
+timeUtils.o:
+primitiveTypeEncoding.o:
+dayOfYear.o:
+sffDatablock.o: sffFree.o sffInfo.o
+sourceReceiver.o: sortArray.o realloc.o dayOfYear.o seismicStation.o mathConstants.o seismicEvent.o
+traceSegy.o:
+sortArray.o:
+longString.o:
+sffHeader.o: sffFree.o sffSource.o
+dateTime.o: realloc.o timeUtils.o
+gfdsvrkfseis.o: commandLine.o errorMessage.o greenSection.o greenFrequencyWavenumber.o mathConstants.o fileUnitHandler.o sourceReceiver.o
+filterCoefficientsDecimate.o:
+binarySegy.o:
+greenDisplacementSpectrum.o:
+greenFrequencyWavenumber.o: geminiEarthModel.o errorMessage.o fourierTransform.o wavenumberIntegralMapping.o mathConstants.o streamAccess.o fileUnitHandler.o
+simpleString.o:
+realloc.o:
+greenSection.o: frequencyTime.o dataSegy.o sffHeader.o errorMessage.o instrumentResponse.o sffDatablock.o ssaDataset.o greenFrequencyWavenumber.o timeSeries.o mathConstants.o greenDisplacementSpectrum.o sourceReceiver.o
+commandLine.o:
+instrumentResponse.o: mathConstants.o errorMessage.o flexibleType.o
+sffInfo.o:
+flexibleType.o: primitiveTypeEncoding.o simpleString.o kindDefinitions.o
+errorMessage.o: realloc.o
+seismicStation.o: mathConstants.o errorMessage.o flexibleType.o dateTime.o
+Make.o:
+geminiEarthModel.o: streamAccess.o errorMessage.o flexibleType.o fileUnitHandler.o locatePoint.o
+locatePoint.o:
+kindDefinitions.o:
+recursiveFilterCoefficients.o: mathConstants.o
+sffSource.o:
+gfdsvrkf.o: mathConstants.o primitiveTypeEncoding.o commandLine.o streamAccess.o
+wavenumberIntegralMapping.o:
+frequencyTime.o: fourierTransform.o errorMessage.o
+sffFree.o:
+gfdsvrkf_mpi.o: mathConstants.o primitiveTypeEncoding.o commandLine.o mpiSupport.o streamAccess.o
+diffDataSynthetics.o: commandLine.o timeSeries.o sffDataSection.o
+syssolidt.o: nvmax.h
+bessj0y0.o:
+dlocate.o:
+hbutrw.o:
+jump_solution_sph.o: earthmodel.h nodesdim.h pi.h nodes.h
+torderivs.o: nodes.h nodesdim.h nvmax.h layer.h zero.h
+geo2epi.o:
+trim.o:
+greenint.o: nodesstore.h nodesdim.h nvmax.h nodes.h
+stavsurf.o:
+torint.o: nodesstore.h nodesdim.h nvmax.h nodes.h
+startr.o: earthmodel.h layer.h pi.h zero.h
+dfftpack.o:
+jump_solution_tor.o: earthmodel.h nodesdim.h pi.h nodes.h
+pythag.o:
+bessj1y1.o:
+flnm_procs.o: flnm.h
+zsplco.o:
+sterms.o:
+dcubsplco.o:
+gse20.o:
+hbutcw.o:
+reciprocity.o:
+minorint.o: nodesstore.h nodesdim.h nvmax.h nodes.h
+sphan2cf.o: pi.h
+sphderivs.o: nodes.h nodesdim.h nvmax.h layer.h zero.h
+nodes_procs.o: layer.h nodesdim.h nodesstore.h bsstore.h earthmodel.h zero.h nvmax.h nodes.h pi.h
+sysspher.o: nvmax.h
+sphancf.o: pi.h
+stuff.o:
+layer_procs.o: earthmodel.h layer.h pi.h zero.h
+bsint_procs.o: nvmax.h bsint.h bsstore.h
+zelcon.o: zero.h pi.h
+sysminors.o: nvmax.h
+sysliq.o: nvmax.h
+propag.o: zero.h
+systor.o: nvmax.h
+zetl.o: pi.h
+earthmodel_procs.o: earthmodel.h layer.h flnm.h
+stavani.o:

@@ -1,0 +1,58 @@
+GFORTRAN module version '0' created from sffFree.f90 on Mon Feb 18 16:14:42 2013
+MD5:6a9bd30952c05780ebb50b7d81527da7 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+(('dealloc' 'sfffree' 2) ('new' 'sfffree' 3))
+
+()
+
+()
+
+(4 'linessfffree' 'sfffree' 'linessfffree' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN DIMENSION POINTER FUNCTION ALWAYS_EXPLICIT) (
+CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '80')))
+5 0 (6) (1 DEFERRED () ()) 4 () () () 0 0)
+7 'null' '(intrinsic)' 'null' 1 ((PROCEDURE UNKNOWN-INTENT
+INTRINSIC-PROC UNKNOWN UNKNOWN FUNCTION) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0
+() () 0 () () () 0 0)
+8 'sff_free' 'sfffree' 'sff_free' 1 ((DERIVED UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN POINTER_COMP PRIVATE_COMP) (UNKNOWN 0 0 0
+UNKNOWN ()) 0 0 () () 0 ((9 'nline' (INTEGER 4 0 0 INTEGER ()) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())
+(10 'lenmax' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (11 'lines' (CHARACTER
+1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '80'))) (1
+DEFERRED () ()) (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION POINTER) UNKNOWN-ACCESS (NULL (UNKNOWN 0 0 0 UNKNOWN ()) 0)))
+PRIVATE (() ()) () 0 0)
+12 'sfffree' 'sfffree' 'sfffree' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+13 'writesfffree' 'sfffree' 'writesfffree' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 14 0 (
+15 16) () 0 () () () 0 0)
+3 'constructsfffree' 'sfffree' 'constructsfffree' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 17 0 (18 19) () 0 () () () 0 0)
+2 'destroysfffree' 'sfffree' 'destroysfffree' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 20 0 (21) () 0 () () () 0 0)
+18 'this' '' 'this' 17 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 8 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+19 'lu' '' 'lu' 17 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+21 'this' '' 'this' 20 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 8 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+6 'this' '' 'this' 5 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 8 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+15 'this' '' 'this' 14 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (DERIVED 8 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+16 'lu' '' 'lu' 14 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+)
+
+('linessfffree' 0 4 'null' 0 7 'sff_free' 0 8 'sfffree' 0 12
+'writesfffree' 0 13)

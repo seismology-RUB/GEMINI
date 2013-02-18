@@ -1,0 +1,79 @@
+GFORTRAN module version '0' created from sortArray.f90 on Mon Feb 18 16:15:01 2013
+MD5:b98d07236e6770cbfc6bc461b2ccb1a0 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+(('sort' 'sortarray' 2 3 4))
+
+()
+
+()
+
+(5 'findnsmallestrealsortarray' 'sortarray' 'findnsmallestrealsortarray'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 6 0 (7 8 9) () 0 () () () 0
+0)
+3 'integersortarray' 'sortarray' 'integersortarray' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 10 0 (11 12) () 0 () () () 0 0)
+4 'realsortarray' 'sortarray' 'realsortarray' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 13 0 (14 15) () 0 () () () 0 0)
+16 'reorderintegersortarray' 'sortarray' 'reorderintegersortarray' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 17 0 (18 19) () 0 () () () 0
+0)
+20 'sortarray' 'sortarray' 'sortarray' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() () 0 0)
+2 'stringsortarray' 'sortarray' 'stringsortarray' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 21 0 (22 23) () 0 () () () 0 0)
+14 'a' '' 'a' 13 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+15 'indx' '' 'indx' 13 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+11 'ia' '' 'ia' 10 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+12 'indx' '' 'indx' 10 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+22 'a' '' 'a' 21 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+23 'indx' '' 'indx' 21 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+18 'ia' '' 'ia' 17 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+19 'indx' '' 'indx' 17 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+7 'a' '' 'a' 6 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+8 'indx' '' 'indx' 6 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+ASSUMED_SHAPE (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () ()
+0 0)
+9 'nsm' '' 'nsm' 6 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+)
+
+('findnsmallestrealsortarray' 0 5 'integersortarray' 0 3 'realsortarray'
+0 4 'reorderintegersortarray' 0 16 'sortarray' 0 20 'stringsortarray' 0
+2)
