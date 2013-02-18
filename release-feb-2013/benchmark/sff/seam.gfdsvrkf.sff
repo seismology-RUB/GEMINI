@@ -1,0 +1,232 @@
+STAT    1.10 130218.161855 S         
+SRCE auto                 C        0.000000       0.000000       9.000000 000101 0000 0.000
+DAST        1680     0.153717E-14 DI        
+WID2 0000/01/01 00:00: 0.000 SE00  XUN XX   CM6      420 3999.999756   0.10E+01   1.000    NSP   0.0 90.0                           
+DAT2
+ysBixTkqa5UnmHUteBkqwHkuuAUzUJUzjQldlLlYb3VxmOVdt9ndV6qw5jnYCUvgqNigXEkncuEliqi-
+ljXWBkorp6UmfpLVkjiHVgptKVUYTllecQlusUPkmtW6UygiIVnag8VjqeJVcmo2UvrqGooy5lhgeKly
+XgRldstSpbf8UpaW6UykkLUvxlGjzn0neg1kpvzIkxpVHkqtnPotV8jrv8UvloHUrnWKbut1silFkljp
+6kmhi+wdtMksl5eir1hygOcoo5UnUDpVW0rrsSrmWHnfb8XbV3bZz0Zyp3VtXEmboBouoPovz3ljrPXZ
+t6ZYw6XhhTUnWOlfi1mniQmvgElZx3VcbLWVX-VXhTUkbDUls3nxClZb-ktX3UohQUyn9WnDnpSjd6as
+7ksyIkpY4UlZ8UxXNaeNmg+axAqo3lUxJkpo9UlZ+Utj0WpKln0glOWzEkpU1xpHgyHdc5ymKthQiY1b
+cLkmd8wtLgi0cW0ynLrj+UkjFcnEklf5wXMfZ0YnBkld5re4UlqRdULkkk9tjHhrKYv1kmrRsxMjrDav
+2kkjRqYMUlrDas9kmUHrqJUkkBaVGklg3pt4UltJZg8kmu1qg5UlsTZbIkmbNoc8UoeAap0klw0olBUm
+nFXhTkofNob4Uox0ZqAkmm0mrFUoxPXhJkpl-oZFUpaSYn3knj9lpEUqXQWs7kqZTmwJUqbHXWJkpfTl
+d5UrbLWkIkqWLkwQUrg-UySksYCluAUrUDhKkrkDUuAUtl0UkIksyHoEUtY7cCksXRVs0UtkImf4kvk9
+VGUsw4mtBkuZ8XvTUwYTmt-kvrKXj8UwcTnwFkxY9XfPUwhOoy6kydBXnAUxl2neQkvaQavNUwrKtcIl
+Ve2ZZ2UydFqy1kxc6fpMVXm1qyDlVuRZgJUwtFwjOlWg-fUKVYfFriNlUlMdhEUyUMzt2lXZOUkZAVcr
+2seSlUzAhX3UzV7kqYLleaHiv9VdZEuWBlUbRUnX1VXy2kqa2ldl+Umm2VcV3kngOlcZ0Unr6VbeNkpY
+PlZu3Uus5VfjSktW+lhjOUpc7VcgQktzJlcw2UzY4Vju3kuwFljj4Urk7Vct2kxy1ldb8VYiLVlXElUU
+SljkMVUg3VhnDlYtPlma2VUvRVheLlZWAlfq6Vhj+Vor1ldbJlox+Vaf8VjbPlgq+lloSVioAVnc8ljY
+Plme9VmoLVog+lncAlnWHVslJVrtGlsjClvnGVlmRVlgGluZSljvFWaYNVwU5mWb-lznRVtyDVnq+mYp
+9lofTWjz5WXh6mZgKlze-WWbNVojPminNlsy5WmzGVysPmil7lsr6WnlPVpWEmybQlvnDWzwOVxyAnVg
+ClzfJXVZKVwf9nYn2lsWOXjVGVxiEnloRlyt2XpwMWWXRnqzGmYWAXmx2VsU+oWoMlyjAYbzDWab+oUx
+TluZOYjxFWWXNojc3mUXKYkq4VqVPpYpGmaV7YwuBVzu1oym8lnoCZlvDVvm7pqq-lxk5ZvnIVyX-qUl
+Qlxx5aYuQVvfQqdoMlmsRawn8VxZJqyUIlyqGatbQVbv+rwq7mVURbocJWUU+reeFlVz5cfv3VfpFsoc
+5lcm+                                                                           
+CHK2   510480
+INFO C        0.000000      10.000000       0.000000    1
+DAST        1680     0.351664E-07 DI        
+WID2 0000/01/01 00:00: 0.000 SE00  XUE XX   CM6      420 3999.999756   0.10E+01   1.000    NSP  90.0 90.0                           
+DAT2
+ysBixTkqa5UnmHUteBkqwHkuuAUzUJUzjQldlLlYb3VxmOVdt9ndV6qw5jnYCUvgqNigXEkncuEliqi0
+ljXW9korp7UmfpLVkjiHVgptKVUYTllecQlusUPkmtW5UygiGVnag9VjqeJVcmo2UvrqGooy5lhgeLly
+XgPldstTpbf8UpaW6UykkLUvxlGjzn0neg1kpvzIkxpVHkqtnPotV8jrv8UvloHUrnWKbut1silFkljp
+6kmhi+wdtMksl5eir1hygOcoo4UnUFpVW1rrsSrmWHnfb8XbV3bZz0Zyp3VtXEmboBouoOovz5ljrOXZ
+t6ZYw6XhhTUnWOlfi1mniQmvgElZx3VcbLWVX-VXhTUkbDUls3nxClZb-ktX3UohPUynBWnCnpSjd6as
+7ksyIkpY4UlZ8UxXNaeNmg+axAqo3lUxJkpo8UlYSUtj1WpKln0glOWzDkpU-xpIgyHdc4ymIthRiY0b
+cNkmdAwtKgi1cW-ynLrj+UkjFcnEklf5wXLfZ-YnBkld5re5UlqTdUJkkk7tjIhrKYv0kmrPsxOjrDav
+3kkjRqYMUlrDas9kmUHrqIUkkAaVGklg2pt5UltIZg9kmu1qg5UlsTZbHkmbMoc7Uoe9ap0klw0olBUm
+nFXhSkofKob7Uox1ZqBkmm1mrGUoxQXhJkpl-oZFUpaSYn3knj8lpGUqXRWs7kqZTmwJUqbHXWJkpfTl
+d5UrbLWkHkqWJkwRUrg-UySksYCluBUrUEhKkrkCUu8Utl1UkJksyJoCUtY5cEksXTVs2UtkImf6kvk7
+VFUsw4mtBkuZ9Xw-UwYSmt-kvrKXj7Uwd+nwEkxYBXfQUwhOoy6kydCXnCUxl1nePkvaSavOUwrKtcJl
+Ve1ZZ3UydEqy1kxc5fpKVXm2qyClVuSZgIUwtHwjQlWg+fULVYfEriOlUlLdhDUyUMzt0lXZQUkZBVcr
+3seTlUz9hX2UzV6kqYJleaIiv9VdZFuWBlUbSUnX1VXy1kqa2ldkTUmm2VcV3kngOlcZ0Unr6VbeNkpY
+QlZu2Uus5VfjTktW0lhjMUpc6VcgQktzJlcw1UzY2Vju4kuwFljj3Urk6Vct1kxy1ldb6VYiJVlXGlUU
+TljkMVUg3VhnDlYtQlma1VUvSVheJlZW8lfq7VhiTVor2ldbKlowSVaf8VjbPlgq0lloRVioBVnc7ljY
+OlmeBVmoLVog+lnc9lnWGVslIVrtHlsjDlvnFVlmQVlgGluZSljvGWaYPVwU3mWb+lznSVtyDVnq-mYp
+AlofTWjz5WXh7mZgJlze-WWbOVojNminNlsy5WmzFVysQmil7lsr6WnlPVpWEmybPlvnEWzwNVxyBnVg
+ClzfIXVZLVwf9nYn3lsWPXjVFVxiEnloSlyt0XpwMWWXSnqzHmYWAXmx0VsU+oWoKlyjAYbzDWab+oUx
+SluZNYjxDWWXMojc3mUXLYkq7VqVOpYpFmaV8YwuCVzu0oym8lnoDZlvEVvm8pqq+lxk6ZvnHVyX-qUl
+Qlxx6aYuSVvfQqdoNlmsQawn6VxZIqyUHlyqGatbPVbv0rwq7mVUSbocKWUU+reeFlVz5cfv3VfpGsoc
+6lcm-                                                                           
+CHK2   510481
+INFO C        0.000000      10.000000       0.000000    1
+DAST        1520     0.470761E-07 DI        
+WID2 0000/01/01 00:00: 0.000 SE00  XUZ XX   CM6      420 3999.999756   0.10E+01   1.000    NSP  -1.0  0.0                           
+DAT2
+knj8Umq6Yn+VfQpdNktGch1ZWKsYNubGaW7jqTtsKlZWLVcX3cVmLglhJYYc5klYiFlVslHkvdqRlaYC
+Uqra5Uzxe7VWrt+VaeW6Uxrw8onm5llqwLmbydPluxaJkysf1rtnLhyaFVfmU3WXriLVxpW4Uqzj-kpi
+f4lftfGlawgDkmyqEXdt0UopUAUwXZ3Uqkj8ZwUBxyYBkume6ktVaTuwuBadyIUkrkLUldyRexZ3VcZQ
+san2wvr-tmlClUoHaZdEbzuKZhk7UssNoge6rub5qzx3mcoMWtVMZXiPYhiRVrf3lutIoghPoUm0lXjD
+VurNXWfRWsnIViX5knxRmej1mdg+ktx5ii8UtgPUwUGUvxNbi2kqoTkuVLlm6jkRiyTUmkSUufMilQvr
+5knfKojDYpQWYOcYJUoV-hrPpyLtnRXdCaXLmh8UuEhe1ed9ouMphBau8ab7piTnlHdVCbV-qm1qY9Zu
+9Yk2rY9or9buLZr-rZ0pyEZj1WwBtV3pyHatAYd6sdMqZFZiSWa7uVDqnGac9XoGsdDoxObXIXbLtk0q
+eDZp2VyAtu3pY3bsJXx8smDpUCae9VhFubLof4cr1Xr3tZ9omCbjOWc1tkRnW8dyFYYKss+naHcyIWkT
+tyKnZOdrQXZCtjJmkCef2XgJtWHlhPff3Xe6tzImcPeoLWhSumQlwMfr7XhQtwGlm-fWDVn0vp3lrCgp
+KYYLszGp1fjIW6xi+mYSgfLWiDunRcRhY5VULwtPkwRgx4UsNxXJkr9he0UzOwo6aQhoBr5yoQlfMgrN
+u8xcDVYBid2ky8yp0UkOhv5lyEywGWl7Ukx9uSzlQc1hmEnpGkkrMWf6Ulm8YFydNVuRgdTsb4kns8YU
+BUojEUk9yfPYo7UkWSqxHkog7XW+UlnEpY+kmrLZaNUnjGodQklx0ayQUouPotRknyHXmIjlQtvRkngK
+gb2Uvg-moTkosIWq+gm3kkn9ktgAfu9UzZRVyGzm-bn7gz4kpo1kyaKfXNUzl7Us9zXDfwFUln6knXGk
+vwPftJUspFwZLkqb6UlcQUvlGymFkwc3fZDUroJxu5kpV0Uop2UumBkofHkyaSjoAUtW9koo9kvb9UrX
+4VUd-kmtLkya3UmcDUut2kqiGkvjGUux5VWW+kpoKkyoIUqyBUvw8kyVHlXrOUtZPVWj2kriEkxvDUxZ
+DVUvAkyv+lZm8UtbOVUs-ktt6ktkCVah1VXoLlYYDlctIUta+UtbAlcYHkza+ViX+VfqPlVUOlUfQVbu
+IUyeFlllTlbn7VioJVdWClgs0lblKVhdBVZe7lkfSlXq6VruIVfkGlns0leaQVmeJVXZMlycHliWGVsY
+DVfxNlpsAlXXFWVXTVdZEmVb0ldXOWWv+VakGmfb5lio8WasKVfn5mbW+lXpPWpd4VicMmmXBlgX3WrV
+8Vjj6msXSlnoBWiU5UynSnap+lcpAXoaOWYvSmryLlobHWlpTUmqH                           
+CHK2   417353
+INFO C        0.000000      10.000000       0.000000    1
+DAST        1680     0.473387E-15 DI        
+WID2 0000/01/01 00:00: 0.000 SE01  XUN XX   CM6      440 3999.999756   0.10E+01   1.000    NSP   0.0 90.0                           
+DAT2
+lh+bW+ub8pg7gn0aeJycAraTjeDagPkmb1pYMUsa5asCkxU5qt+VXo-Xq+lkp9WxAWedOkndLnuXDZqx
+2UtowEUxzZ-liWIlmslAmeol0lkvY-czt5Vvmk7WebaJVlbZPWxaClXqUTlgknBkquZ0fxmKVbUpJVfX
+aHjzm9lWilCmhgs4miagQlVlb6UpxjNVmzp4Vjvj5Uzfs+Ukox2Zwp8prRWgvIfyiHUlic9ckkHxyb-l
+aYyAlmXfKlelbQkmkmEggoNVcdz4VsXVMVmhuBUonnKknvm3livr3lihcQktje+WiIUofoCUyXUGUreV
+JVUzKkpcrRkuUl-wtuBXfnTfnd0hcrMfnW0YthOqjwOxzz3ugoMVYc1eog4fwvRaXW-mYqEsmgLuklGr
+gY-ksxBaZYBdvv6cUqFVswDodpNqck8oat3kqpIWng+YyUNYso2VhW7mrv1oeUKmvp2kkl+Vhr1Wxm4X
+avRVgu5lfXGmpo8mUp4kpcOUnY2Vry8WYlTVXY5kkjIlbl1lWbFkvx4kkbEjcCVcVEUtY4shCknjMxhD
+kkm9klj4ZV6UvZSUke5spGwdGpV5wtNknoJlcLUnl8fVSsjBrlQUFuW9kmpHltLUkfKalStoGmx+bd6p
+U+kldRnZHhbPXf+ucPn1fa7mgRkkUAmk3gzMWk6uYKVfDgp7lWNxqMsJgXGlfLwmLXZ-Ukk3VzNvW6Wf
+6gmNoZIkkV2Vs4Uka-UzSvp4XzIjq4lq8yzAViSiv4VIuq6Zl0iy6ocOkkVRWY2ht7nc6wX8bwHUleHo
+t2klWPXY5iwDoh2xuObvSUlx-phQkmVKXb7jh4oW8xXNcaFjx4suBknlSXk4hwNri5xmEgoRUpaFqf0k
+nX+Wx6fUKvpPzkFha+UnzBugCkphDZaHjnOrVBuz9jcNUknQza8knhShaBUmh2zhSkqvEdhPUkgEyyBk
+nV9UkkKUtU0qz5yg9hs7gxNkqsMkryCir9UnzCzbKklVMUozDUreCkkbKkokKUlYCUna7koX0kpz2Umr
+MUptSkmvSksXJfuPhl9kme4rtKVXbBUtfOkuoMkurPUoX7UndQkuj-kryHUrU4UosKktdFkohEUwxDUv
+WJkmoGxx-UxV9hhBlfZQlXcAUse6UxcLwrGpgPVVkQcnHlkXGkvg-Vak+Uxq7kxb2kna-VZa2UqzGlZa
+FkukDUxYFjYNlZlCyu3VgxBUrdClZaNzYSVepAfzElpwIkrYGVlVFUsaAlgnQkmlIVizRgm3lvz3kruR
+VvU0VYiPlXW4ufPVjx3lb+miv6kyhFVzoGVZpBlaqOtU4VoVCob7mnv8ktiOWccQVYU6lft0kqLWYa0U
+nOmubGkyU+WWuQUpZDlqn0dy8Wqy9WtNnWgFkvnRWadQVhPmqo6d5Xbk0Unx0mqw0pyLXWiPhrAmwz8u
+d0Wru4rmOnhVSnvNXfnQXjQniXGqZCXcy8mmSnfx5ip6YUa5laQnyVOnXQXpk-qfPnos7UqrBYbUSkmw
+9oiYLiiTYiZGzjGohdDUocHYcXRlkWLpgyFUxnTZqf9mq-oonAVWVHZXy6lbc0pisEVXeQZcZMlrq7py
+x+VitOaUc5lfeEpnf4WXv5aUr3moWJqxt4                                              
+CHK2   102212
+INFO C        0.000000      20.000000       0.000000    1
+DAST        1680     0.108298E-07 DI        
+WID2 0000/01/01 00:00: 0.000 SE01  XUE XX   CM6      440 3999.999756   0.10E+01   1.000    NSP  90.0 90.0                           
+DAT2
+lh+bW+ub8pg7gn0aeJycAraTjeDagPkmb1pYMUsa5asCkxU5qt+VXo-Xq+lkp9WxAWedOkndLnuXDZqx
+2UtowEUxzZ-liWIlmslAmeol0lkvY-czt5Vvmk8WebaHVlbZQWxaClXqUTlgknBkquZ0fxmKVbUpJVfX
+aHjzm9lWilCmhgs5miagOlVlb7UpxjOVmzp1Vjvj8UzfrTUkox3Zwp5prOWgvHfyiHUlic9ckkHxyb-l
+aYyAlmXfKlelbQkmkmEggoNVcdz4VsXVMVmhuBUonnKknvm3livr3lihcPktje0WiJUofoCUyXUGUreV
+JVUzKkpcrQkuUl1wtuAXfnTfnd0hcrMfnW-YthQqjwPxzz3ugoMVYc1eog4fwvRaXW0mYqGsmgKuklGr
+gY-ksxBaZYBdvv5cUqGVswDodpMqck9oat3kqpHWnfSYyUOYso3VhW5mrv0oeUKmvp2kkl+Vhr1Wxm4X
+avRVgu4lfXEmpo9mUp4kpcOUnY2Vry8WYlTVXY5kkjIlbl0lWbHkvx3kkbEjcCVcVEUtY4shCknjMxhD
+kkm9klj4ZV6UvZSUke5spGwdGpV5wtNknoJlcLUnl8fVRsj9rlRUFuW9kmpHltLUkfKalStoGmx+bd6p
+U+kldRnZHhbOXf0ucRn-fa5mgQkkU9mk3gzLWk6uYKVfDgp6lWMxqMsJgXGlfLwmMXZ1Ukk1VzOvW5Wf
+5gmNoZIkkV2Vs4Uka-UzSvp4XzIjq4lq8yzAViSiv4VIuq7Zl2iy6ocPkkVRWY1ht8nc6wX7bwFUleJo
+t3klWQXY6iwDoh3xuNbvTUlx+phPkmVMXb8jh4oW8xXNcaGjx2su9knm+Xk4hwOri6xmCgoQUpaFqf-k
+nX-Wx7fUJvpQzkDhZTUnzBugDkphBZaEjnQrVCuz8jcOUknQza8knhThaBUmh2zhSkqvEdhQUkgCyyBk
+nV8UkkJUtU1qz4ygAhs7gxNkqsMkryDirAUnzDzbLklVLUozBUreCkkbJkokKUlYCUna6koX+kpz3Umr
+MUptSkmvSksXIfuOhlAkme3rtNVXbCUtfMkuoKkurRUoX9UndQkuj0kryFUrU4UosKktdFkohFUwxDUv
+WKkmoHxx0UxVAhhClfZSlXc9Use5UxcLwrFpgQVVkTcnGlkXGkvg-VajSUxq8kxb4kna-VZa4UqzGlZa
+FkukDUxYEjYOlZlCyu2VgxCUrdClZaOzYTVepAfzDlpwIkrYFVlVFUsaAlgnQkmlIVizPgm3lvz1kruP
+VvU-VYiPlXW4ufRVjx4lb-miv5kyhEVzoFVZpClaqQtU4VoVDob7mnv9ktiNWccRVYU5lft0kqLWYa-U
+nPmubFkyU-WWuSUpZBlqn0dy5Wqy8WtPnWgDkvnPWadSVhOmqo7d4Xbk-Unx1mqw0pyLXWiOhr7mwz9u
+d0Wru5rmNnhVPnvNXfnRXjPniXGqZCXcy9mmSnfx5ip4YUa2laRnyVMnXQXpk-qfNnos6UqrCYbUTkmw
+9oiYOiiTYiZGzjFohdFUocIYcXRlkWMpgyEUxo+Zqf8mq+oonBVWVGZXy6lbc-pisCVXeQZcZMlrq8py
+x0VitNaUc5lfeDpnf3WXv5aUr2moWJqxt4                                              
+CHK2   102226
+INFO C        0.000000      20.000000       0.000000    1
+DAST        1520     0.206661E-07 DI        
+WID2 0000/01/01 00:00: 0.000 SE01  XUZ XX   CM6      440 3999.999756   0.10E+01   1.000    NSP  -1.0  0.0                           
+DAT2
+zoChtAliHVqSXhSjQlt+UqRWbLlw0ok4iJYaRlh4pgQXe6eYIlYSvZRYYDUkoDwjSkzqAVvcParh0ago
+JnniFkkqpQkoez7thl5clzGUpmqEUqgW3esg+qpsPkluvHxmwNihTbou+WdZ6fxKUlgUCVbrb1VWsgGr
+Wb0lpzu4mWeuRlbcvLlwVPUnhiMUqmZ7UlhkEbuU5qZVDklYo-xcfMbsq-VUrqPVfhU+Uzss2ZYtJkpx
+lGlavYBleXs9kzVgSqotEUqvjAVdfy3VYyj+idd3tqoTkqcf+kqVz4wmo+Wzj8UlsY0Uoya7cnv9tccC
+kmkkHzaz4qUm6WmxQcxd0fki4bnuRlqzBtuhMurmSozvRWfy9bavHcUp0YwVAksi8pyiLrtX-piqKkok
+KXtjDZhmOXpjTYf4mue8nvvQmzZNkow5WWtTXoa7WwfNUmn3lizKmbyKlxx9kveRUrgLVzvNVzZ1UsuD
+kka9lYb1lYlPkopReX4VbWJVfYDUqtTmDxd+kniOkkfRUz8UoxSUsiPgnMWUMmpPsi-vtIncCehOhgAa
+h+WoIWpLmg-skTok2ZaKapDVZ9g9WwKlWTrjMoqAXe8Xo2lt1lkPWXMlaBro8poTVdIVe2ndIlzCWfAs
+Bpw2oVDVZLkp0peDml0WzSUr6ojKmZ5Wi9lc-rdBoVGWzLVs3ncNkzIXsPdLpvKnkJWX1ZSnt8dPZoAV
+VFqe3nz5WeBUuKmyRVjNbaAWnBpXTne8WgNjRngNVWTay6XXOnd2kyNXj0pKoZ2Vn9bq7Wa0pyRnpPWY
+BY-mk4YV+eV3YV1ogBmrEUxGoVPrxNfOds7aqIoNVe0WyQooTtyRlm9cZGZdFkl5WwEZlInp7wcOqcTX
+z3Yg4WaGasTbs2nWFvZGomHXZKkz1peEVoQbl8UzLpcDmDXxEmvEpwNYWNdqPkvGtuHmlGZnCVGpv7Ul
+-ZwSkkEoj1XcFaeOoV0ssKWh4dVTlk7tsLmd3WxSpuDtaAYl6ih3abPlmNXVFVzQwzMkltQvAiYMchIV
+lIatKZiOuxRklfLlp8ejIXeMlsIbp8dlTqfIyq2nZ-Xf6qxDsm4da-Umd-ZY+oW8Xn1XYGykHknmImNh
+hSZWNv9cfJawNtw5vdOceEiUHnkRtuQYkOZV-zqDkmlRavCUnpOYfAnaKdwBceEkkq4ksU5yNhgBVgFl
+jJiv8goQzYGkrqDa+hnNUo-lv8jyFizNvbGkmp7Vz7bn4uZCsx9js-UlbTtV9xzMce6cu2klUCkmdFcz
+8gmJukGqvNUri-UpZMzcPkqr4ZaPbnTkoeOkke1UraQUyyImY1vxGevDam+kunLkrsTjjEUoyIva-vj2
+UqxQUpk8klaCkog2hrLga8kshSkpb2UmpNUkcPksjPkol4UspQUsiNknf-kmWGUvaFUuUDkpj2kre9Up
+iGUpjOkqwAkol0UryNjo8lZgQkzmLUxh6VaiPsg3vtAUumH                                 
+CHK2   323295
+INFO C        0.000000      20.000000       0.000000    1
+DAST        1680     0.398496E-15 DI        
+WID2 0000/01/01 00:00: 0.000 SE02  XUN XX   CM6      460 3999.999756   0.10E+01   1.000    NSP   0.0 90.0                           
+DAT2
+XvOkzOyLow3jGZnTXPpqRyQZa7kxOrZNXDcXJUwKsZ8kuOcwIhFuxCktBiU0XoJycBnYDUmcMXm6kupQ
+swAVXq-fkRlxr8Xb5dYb9Ukqa0dhjGyixClaYvNlblxGwuWMUsdnPVhUz7VYkcAdXu1zhcQkrksDklUU
+5ohU3cid+Ullm+UktZCXVYGzeiPkqnW5vwp1bVq3UnWuEUmdYScmf8oeuRzXv4kljkIudtJoXpIvXn-k
+ubdFkwYx6pXh0UwioSVkeaBViywCVWkYDUmyW9leh5ktjfIlfehHlhYr7kzXuIrmWPUmrZKVaptKVdnb
+-UsuW4lWa8kppc2kybVSkukvPvbn5fcpRUwlUKUvqoLcol4zknAkyexDkxfhHyfhHawmCUreiCUura+U
+ldgTVoX1xbZ2kpei2klttKnpmReziQjcrPcyeSUkZ8oryHrzjQtXhJomm7YnU+eguTbnfHUlyOnpVLoV
+jPnhlKmUl3VhdCYwUOYrlGVUyAmnx8npzQmksOws3VqkAWsk3WcgRUtu4kptRlriHlthRwxOVjcLVzYB
+Uul2tW0zr-kpc3lWr9koX8Utt9VivHUkzRkkkQkkZ6smBklh5zXTiUBUzjPfe5xgQwt8rvJkkjQycEej
+PUrgHZZ5wdTqrOmqPyqQyy0bt1UmuAVi5vmJluNWUJxjKkklEZnRUlXCf7vhKVFZc+tpTxXIbcEUkY0l
+sHvuCWf2cf9sWBxnLZb9hqRmr6uV3ZtOexDrhExwNYr8gySmtMsW3dUHgxNrUMxWHak2hbTpsBwoFZsD
+gjSop9tcTdX0hXJqeIugCdg0geMtzNzUEbgEin4oq1tl+dt9gaPuU0xqQcsCgw8tgIwrOeuKisNtlLyo
+3dp4UkfTpjRvVRczQeeBxu7klaNasDff6toIttQivQUkeKsn-urJfwKdW2kmtNklj8hXBjd3xq6znOhs
+3UkX7xtEkll3fs5UlkSreDtv3guIbx2kpyLkmn3jhLUmbDuq3uz2UkqJgb3kogKklZ2UmVMUlt3klXDk
+nYNhYFixAymLwz6UlbIhz3kklHurQUpu+ih+kprJkkqRUlzNem9kue9kloFUsmFUqjHzVOwYKUpwIhf3
+kseHzm7UrwIUkX2kqlKxnRUrwHdw4lVYLkoVCUuy4UnZ1krh8wa8VUeQUotEkucRknhPUotLbxHlUX2v
+h4Vab+Uqk+kvf8yh5UytMfnSlau0kppEUxUSiaLkxuGpbAVfrRhh9lis0kqkHVccFUqcBlYn2kmu+VZW
+7UkwFlZpExuEVdjChpQlhiOklc0VgjIUls6ley4yx-VgpEgk5llUJwwCVqiRUnyGlmu8kquHVbn9Zv2l
+oY9ngMWYiFUpnIltz2knZCVrtOiY9lyXQkncJVuyLUlmOlunMzz2Vsm+asHmXuJvg1WbmPUmtHlypErr
+-Wco-fX0mfVJxkBWet2hk-meb7wU4WbWGlUImrkOpkOWzY7Unz2mll+vi5Wjs7mfPmyzGVfSXjUDUnuM
+nUrCkmZAWmrPsoLnfuBUq8Xng-baFnoa8yt-XcYOWSnjtPebOYcfEgvBnvp5ruAXyaIil8ncs2Uqa9Ya
+r6ksa6papPxg9YfZ3pp+osaHlUPYmeKqbEoevOVhoDaac9WbBpij4euKZwd5Xf-penG             
+CHK2  3298003
+INFO C        0.000000      30.000000       0.000000    1
+DAST        1680     0.911652E-08 DI        
+WID2 0000/01/01 00:00: 0.000 SE02  XUE XX   CM6      460 3999.999756   0.10E+01   1.000    NSP  90.0 90.0                           
+DAT2
+XvOkzOyLow3jGZnTXPpqRyQZa7kxOrZNXDcXJUwKsZ8kuOcwJhDuxBktBiU0XoJycBnYDUmcMXm6kupQ
+swAVXq-fkRlxr8Xb5dYb9Ukqa0dhjGyixClaYvNlblxGwuWMUsdnQVhUz6VYkc9dXu3zhcSkrksBklUU
+7ohU2cid+Ullm+UktZBXVYIzeiQkqnW5vwp1bVq3UnWuEUmdYScmf8oeuRzXv4kljkJudtHoXpJvXn-k
+ubdFkwYx5pXh1UwioRVkeaCViywDVWkYBUmyWAleh5ktjfIlfehHlhYr7kzXuIrmWPUmrZKVaptKVdnb
+-UsuW4lWa8kppc2kybVSkukvPvbn5fcpRUwlUKUvqoLcol4zknAkyexDkxfhGyfhJawmDUreiCUura+U
+ldgTVoX1xbZ2kpei3klttInpmSeziQjcrPcyeSUkZ8oryHrzjQtXhJomm7YnU+eguTbnfHUlyOnpVLoV
+jPnhlKmUl3VhdCYwUOYrlGVUyAmnx8npzQmksOws3VqkAWsk3WcgRUtu4kptRlriHlthRwxOVjcLVzYB
+Uul2tW0zr-kpc4lWr8koX7Utt8VivHUkzRkkkPkkZ8smAklh5zY+iUDUzjOfe5xgQwt8rvJkkjQycDej
+NUrgIZZ5wdTqrOmqPyqQyy0bt1UmuAVi5vmJluMWUHxjIkklGZnSUlXCf7vhKVFZc+tpTxXIbcEUkY0l
+sGvuEWf3cf8sW9xnMZb9hqRmr6uV3ZtOexDrhDxwPYr9gySmtMsW2dUFgxOrUNxWFak1hbTpsBwoFZsD
+gjTopBtcRdX-hXJqeIugDdg1geMtzOzUDbgFin3oq1tl+dt9gaPuU0xqQcsCgw8tgIwrOeuKisNtlLyo
+3dp4UkfTpjRvVRczPeeDxu9klaLasCff6toIttQivRUkeIsmTurKfwKdW2kmtOklj7hXCjd1xq5znOhs
+3UkX7xtFkll1fs4UlkRreDtv1guHbx2kpyKkmn4jhMUmbCuq4uz1UkqJgb2kogJklZ1UmVLUlt3klXDk
+nYNhYFixBymMwz7UlbJhz3kklHurPUptTigTkprIkkqRUlzNem9kue9kloFUsmGUqjGzVOwYLUpwJhf3
+kseIzm6UrwIUkX3kqlKxnSUrwHdw3lVYKkoVDUuy6UnZ-krh7wa8VUeQUotEkucSknhNUotKbxIlUX2v
+h4VaaTUqjTkvf7yh6UytMfnSlau+kppEUxUSiaKkxuFpbBVfrQhh8lis-kqkHVccHUqcBlYn2kmu-VZW
+6UkwFlZpDxuCVdjBhpQlhiOklc1VgjJUls4ley4yx0VgpGgk3llUHwwCVqiRUnyJlmuAkquGVbn6Zv0l
+oY8ngMWYiHUpnIltz0knZDVrtPiY6lyXPkncJVuyKUlmOlunKzz0VslRasImXuLvg1WbmOUmtHlypDrq
+TWco+fX1mfVIxkCWet2hk+meb7wU4WbWGlUHmrkOpkOWzY5Unz2mll+vi7Wjs9mfQmyzDVfSXjUDUnuN
+nUrDkmZBWmrPsoMnfuBUq7Xng-baHnoa5yt-XcYNWSnjtRebMYcfCgvCnvp5ru9XyaKil8ncs2Uqa9Ya
+r8ksa5papOxg9YfZ1pp0osaJlUQYmeLqbEoevOVhoEaacBWbBpij1euKZwd4Xf+penK             
+CHK2  3298019
+INFO C        0.000000      30.000000       0.000000    1
+DAST        1680     0.134357E-07 I         
+WID2 0000/01/01 00:00: 0.000 SE02  XUZ XX   CM6      460 3999.999756   0.10E+01   1.000    NSP  -1.0  0.0                           
+DAT2
+YVNodJWkEoc1nv0XzDYiHmwOmsDYwNXlIqp4rjEWVKXu+mp4Ut5fsQce8rbTtZAWq3WeEtiTotQgrGdW
+9vzJspIjtEcj1kut4pXOXXe3ZXU3ViaTqpj2wqp1uthFkwt9exn2Ukne0fwuBYU+uZVLvzmTpUWAZbaC
+ffu3dUgJXV1sXZOtynArmv5rVy5svdAqheSYex1UlyeRUscWHUmmrOaZaGlwdQVywTgYV0flgQufX5ld
+Zc6lrbZRldsdQyybQbakHUquVNVZknEVilg0VasbHihe0xafClUhUNlbjsClUns0vkVCjXyHVUUi0Uzf
+vJUmec1VnwPxltSkqhWMknYeInuaRifgRUsig4UplY7bddGvjsJksbxDkrWp3uks-XidRgguOUkbVKiW
+ZJXsfCtwmSzkuOssxFVpkGaasRZhd-YXcJVrnEnvcTspVTqsdPajPYyYCYgfCVpkDxcPmZz+nluOmwmE
+mnFWnrDXeZCWUaEvm7mgrAmph3lZs-gn0VUUBVco6VhyDjpGlfqBlyiJxaOVZw+VZfQUoXBUrxQUlg7k
+qqIliVFxeQUxn+UzVMitQUkx0ioHyc9lUUNrm3UqZSUnd5cXFjdIioKvq+ktl1ma+UnsJeYBt3fzBin2
+uv6ksVHlf0UlWHXs0qlHdZ8jVAsx+kqX0lZ8iV-lh6uwDbUTidQst4kpWNz1gvFnnTwUEauMhcLud-ko
+yGUx4guPpkPxjFau8hl+tu7knZ9WrKfnHtoLkkoDav1jiCqwHyk+by8iV4unMkmU6am9igKtlFkkjNcW
+TjbGsrByYKfnDUlaPuZFkmYKbV8hq-vUGzYSgsAUnY2sZNzoCcyOhiIvsTxqSiu0Ulw+vuSkkrEfg0jc
+CwYKxX5UlqCUoVLvw0kkvTfr+hpNzw4zwIUkyMUnfRwqLzrHinGUkU9xz5xlNUkcJgW7kpvQkly0Unk1
+Unu1yZHvq8Urk+Umz8kpjKkrlNfiJfwQkmz5vb7UupEUpU1kmxIkkzAUma+fdQktx1kkdMUtzLUnz8kp
+g+kksIUog5duIkymPkla0UyU0UqXTkrcHkkp4Utf5ijSkyWLkmgLUxcRUos4ksv3kkn2UtVTezSlVf0k
+kg7VVhQUor8kupIxnJUyX9dqDlbt8kmx3VYbCUpx-kwvTykQUytPct4lbzBzYEVZwQizElYj5um-VdzG
+guHlfh0xvCVhaHUkr5lffEkkXHVeoGiZ2lfr3wg8Vio7hcAlji9xjLViq+cyRlqYNyh5Vpt1UmXSlkX4
+wlTVmy3gjHllwJrl8Vqt+ajJlxkKycEVqv+cz0lrqMmzNVzyNaUJmWxItZBWXw-iqAltx5mlLWVdDklP
+mfzBuWLWYw6aiPmXs4lZ7WafSosQmks1lhFWkhGXjNmfsHZpCWphNmYSmsl8nr2WldTna4mlm6gvRWxl
+8scOmzdCbUCWzg6sUKmypPhdMXWuMklWOnfXAfwHXdV+xcKnZi2UsgEXhpOkzlFoVZGhpMXstGwh5nia
+LUva+XmmQlfZ6oiWFUpoRYbqTth6nYYKVzYAYok9lfdOozbKhX6XqV1lpcEobY7Wbe9Zhl8lXlBondFV
+oU2YjaTmob9pwySVjkDZczElmw1oqu4WpmGZjrJmusFqakFWfkGaYY8mchApulGWsnGaWeEnZn6     
+CHK2  4186739
+INFO C        0.000000      30.000000       0.000000    1

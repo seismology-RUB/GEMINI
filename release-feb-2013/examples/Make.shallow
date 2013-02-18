@@ -1,0 +1,35 @@
+#--------------------------------------------------------------------------
+#	Copyright 2013 Wolfgang Friederich
+#
+#	This file is part of Gemini II.
+#
+#	Gemini II is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 2 of the License, or
+#	any later version.
+#
+#	Gemini II is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with Gemini II.  If not, see <http://www.gnu.org/licenses/>.
+#----------------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#  set the SHELL
+#
+SHELL = /usr/bin/tcsh
+#----------------------------------------------------
+#  Example: shallow seismics
+#  You need a path to the executables used below
+#---------------------------------------------------
+temp = output
+gf:
+	if (! -e $(temp)) mkdir -p $(temp)
+	../bin/gfdsvrkf -fmin 1. -fmax 100. -tlen 1.28 -klim "10. 10." -ze 0. -xlen 1. -s 0 -fnod 100. \
+		-sig 5. -wmrg .1 -msd "2. 1" -on $(temp)/nodes.shallow -o $(temp)/shallow shallow.nm
+gfseis:
+	if (! -e $(temp)) mkdir -p $(temp)
+	../bin/gfdsvrkfseis -f asc -o $(temp)/seisshallow.asc -e 30. -dt 0.0025 -lp "5 50." -hp "2 5."  \
+		-zs 0.1 info.shallow $(temp)/shallow.sf
